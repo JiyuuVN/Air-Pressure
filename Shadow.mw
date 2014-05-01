@@ -1,0 +1,1280 @@
+<poem>
+# You can place the script of your game in this file.
+
+init:
+    # Declare images below this line, using the image statement.
+    # eg. image eileen happy = "eileen_happy.png"
+
+    image Class empty = "DarkArtsclass_empty.png"
+    image Class students = "DarkArtsclass copia_students.png" 
+    image Empty basement = "EmptyBasement.png"
+    image Bedroom = "Bedroom.png"
+    image Bedroom night = "Bedroom_N.png"
+    
+    image Finn gasp = "Finngasp.png"
+    image Finn grin = "Finngrin.png"
+    image Finn happyblush = "Finnhappyblush.png"
+    image Finn laugh = "Finnlaugh.png"
+    image Finn sad = "Finnsad.png"
+    image Finn smile = "Finnsmile.png"
+    image Finn smile open = "Finnsmileopen.png"
+    image Finn worried = "Finnworried.png"
+    image Finn normal = "Finnnormal.png"
+    
+    image Mei normal = "Meinormal.png"
+    image Mei grin = "Meigrin.png"
+    image Mei smile = "Meismilel.png"
+    image Mei open = "Meiopen.png"
+    
+    image Asher normal = "AsherNormal.png"
+    image Asher smile = "Asherbigsmile.png"
+    image Asher smile close = "Ashersmileclosed.png"
+    image Asher smiley = "Ashersmiley.png"
+    image Asher ewe = "Asherewe.png"
+    image Asher content = "Ashercontent.png"
+    image Asher grin = "Ashergrin.png"
+    image Asher question = "Asherquestion.png"
+    image Asher question2 = "Asherquestion2.png"
+    
+    image Event 1a = "Event1.png"
+    image Event 1b = "Event1b.png"
+    image Event 1c = "Event1c.png"
+    image Event 1d = "Event1d.png"
+    image Event 1e = "Event1e.png"
+    
+    image Event 2a = "Event2a.png"
+    image Event 2b = "Event2b.png"
+    image Event 2c = "Event2c.png"
+    image Event 2d = "Event2d.png"
+    
+    image Event 3a = "Event3a.png"    
+    image Event 3b = "Event3b.png"    
+    image Event 3c = "Event3c.png"    
+    
+    image Event 4a = "Event4a.png" 
+    image Event 4b = "Event4b.png" 
+    
+    image Event 5a = "Event5a.png"
+    image Event 5b = "Event5b.png"
+    image Event 5c = "Event5c.png"
+    image Event 5d = "Event5d.png"
+    
+    image Event temper = "tempertantrum.png"
+    
+    image Event 6a = "DarkCG6a.png"
+    image Event 6b = "DarkCG6b.png"
+
+    image Event lvlup = "Eventlvlup.png"
+    
+    image Fin = "fin.png"
+    image Fin2 = "fin2.png" 
+    
+    # Declare characters used by this game
+    $ Bu = Character(u'Буниэль', color="#FAAFBA")
+    $ Fi = Character(u'Финн', color="#C38EC7")
+    $ Me = Character(u'мисс Вианен', color="#C38EC7")
+    $ As = Character(u'Ашер', color="#C38EC7")
+
+label start:
+pause (3.0)
+"After carefully reading my textbook, I think I am ready to start trying to do my homework"
+pause (0.5)
+"Thanks to my good memory, I was able to learn the theory quite easily"
+pause (0.5)
+"I hope I don’t screw up..."
+pause (0.5)
+scene Empty basement
+with Dissolve (2.0)
+pause (2.5)
+Bu "Hummm... let’s see..."
+pause (0.5)
+Bu "‘’Shadowplay into 3 different forms’’. Sounds easy enough."
+Bu "First I will turn my lamp on..."
+scene Event 1a
+with Dissolve (2.0)
+pause (3.5)
+Bu ".... You better don't give me much problems, shadow..."
+pause (1)
+scene Empty basement
+with Dissolve (2.0)
+Bu " The light source is already set... everything is ready. "
+Bu "Now, I need to decide what form my shadow will change into..."
+pause (2.0)
+Bu "Mmmmm...."
+pause (1.5)
+Bu "............"
+pause (2)
+Bu "AH!"
+Bu "I know!"
+Bu "A gryffon!"
+Bu "Such a majestic creature"
+Bu " Everyone will be in awe if I am able to do it!"
+pause (1)
+Bu "Ok! Time to begin!"
+Bu "I need to concentrate first"
+Bu "........................."
+pause (2)
+Bu "............................."
+pause (3)
+Bu "MEUS UMBRA VETRO!!!!"
+pause (1)
+"I shouted the spell clearly at the wall in front of me  in that empty basement, shutting my eyes tightly."
+"Some seconds later I opened my eyes to appreciate my first shadowplay"
+"But instead....."
+Bu "....................."
+scene Event 1a
+with Dissolve (1.0)
+pause (2.0)
+Bu "What!? Nothing happened!?"
+" I was welcomed with my normal shadow"
+Bu "Mph!!!!"
+Bu "I must have pronounced it wrong"
+scene Empty basement
+with Dissolve (1.0)
+Bu "I will try again...."
+Bu "........................."
+pause (5)
+Bu "MEUS UMBRA VETRO!!!!"
+pause (1.5)
+scene Event 1a
+with Dissolve (1.0)
+pause (2.0)
+Bu "Nothing again!?"
+Bu "GGRRRRRRR"
+scene Empty basement
+with Dissolve (1.0)
+pause (1.5)
+Bu "MEUS UMBRA VETRO! MEUS UMBRA VETRO! MEUS UMBRA VETRO! MEUS UMBRA VETRO! MEUS UMBRA VETRO!"
+pause (1.0)
+Bu ".............."
+scene Event 1a
+with Dissolve (1.0)
+pause (0.5)
+Bu "NOTHING!!??"
+Bu "AGAIN!!!!"
+scene black
+with Dissolve (0.5)
+"At that moment I started casting blindly, because of my growing anger"
+pause(1.0)
+"........."
+pause (0.5)
+"Yes, I know. I lose my temper quite quickly"
+pause (0.5)
+"{size=-5}It was worse in the past, though...{/size}"
+pause (3.0)
+"In any case..."
+pause (0.5)
+"After many MANY failed attempts to shadowplay...."
+pause (0.5)
+scene Empty basement
+with Dissolve (2.0)
+pause(1.0)
+Bu "................."
+play music "Investigations.mp3" fadein 1
+"I fall on the floor, and start kicking, yelling and crying out loud"
+"{size=-5}ahhh... how embarassing....{/size}"
+pause (1.5)
+scene Event temper
+with Dissolve (1.5)
+pause (1.5)
+Bu " WAAAAAAAAAAAAA!!!!!!"
+Bu "I HATE DARK MAGIC!"
+Bu "I HATE IT!!!!!"
+Bu "WHY MUST I DO EVERYTHING WRONG!!!??"
+Bu "WHY DO I HAVE TO BE SUCH A FAILURE!!!???"
+Bu " WAAAAAAAAAAAAAAAAA!!!!"
+pause (2)
+
+scene black
+with Dissolve (0.5)
+
+"Several minutes later..."
+stop music fadeout (1.5)
+
+pause (1.5)
+
+scene Empty basement
+with Dissolve (2.0)
+
+pause (1.5)
+
+Bu "I....I am tired...."
+
+pause (1)
+
+Bu " -sniff- "
+
+pause (1.5)
+
+Bu "Such a good thing I am alone..."
+
+pause (1.5)
+
+Bu "............."
+
+pause (1.5)
+
+Bu " I will go back to my bedroom...."
+
+pause (1.5)
+
+scene Bedroom night
+with fade
+
+pause (2.5)
+
+Bu "Aahhh.....-sigh-"
+pause(1.5)
+"???" "I-Is e-everything o-ok, B-Buni-chan?"
+pause (0.5)
+Bu "Mm?"
+pause (0.5)
+show Finn normal
+with Dissolve (1.0)
+play music "Luminous Rain.mp3" fadein 1
+pause (1.5)
+Bu "Oh, hi Finn..."
+pause (0.5)
+Fi "  H-Hi B-Buni-chan... "
+Fi "w-where h-have you b-been a-all the a-afternoon?"
+Fi "I-I c-couldn’t find y-you..."
+pause (1.0)
+Bu "Ah..."
+Bu "I’ve been practicing for the Dark Arts class"
+Bu "........"
+Bu "But I am really REALLY bad at it... "
+pause (1.0)
+show Finn sad
+with Dissolve (0.2)
+Fi "B-Buni-chan...."
+pause (1.0)
+Bu " I think I am not meant to have skills at all...."
+pause (1.0)
+Fi "D-Don’t s-say that, B-buni-chan... "
+pause (1.5)
+
+scene Event 2a
+with Dissolve (2.0)
+
+pause (1.5)
+
+Fi "J-Just r-relax..."
+Fi "...a-and s-start w-with something s-simple."
+
+pause (1.0)
+
+scene Event 2b
+with Dissolve (1.0)
+
+Bu "Something simple?...."
+pause (1.0)
+
+Fi "Y-Yes."
+pause (1.0)
+
+scene Event 2a
+with Dissolve (1.0)
+
+pause(1.5)
+
+Bu " ...Even if it is something simple..."
+Bu " I don’t think I will be able to do it... "
+pause(1.0)
+Fi "Buni-chan..."
+pause (1.0) 
+scene Event 2b
+with Dissolve (1.0)
+Bu "...."
+pause (1.0)
+Fi "D-don’t worry."
+pause (1.0)
+scene Event 2c
+with Dissolve (1.0)
+pause (1.0)
+Fi "I belive you will do a good job."
+pause (1.0)
+scene Event 2d
+with Dissolve (1.0)
+pause (1.0)
+Bu ".... Thanks Finn."
+Bu "You always cheer me up..."
+pause (1.0)
+Fi "N-No problem B-Buni-chan."
+pause (1.0)
+
+scene Bedroom night
+with Dissolve (2.0)
+
+"Finn is right."
+"I must not give up."
+"Not now!"
+pause (1.0)
+"Ok!"
+"Tomorrow I will do it better!"
+"Do your best Bunielle!"
+"YES! DO YOUR BEST!!"
+Bu "DO YOUR BEST!!!!"
+pause (1.0)
+show Finn smile
+with Dissolve (0.2)
+Fi "D-Did you say s-something, B-Buni-chan?"
+pause (1.0)
+Bu " Errr... "
+Bu "N-no, I didn’t"
+
+pause (2.5)
+
+scene black
+with Dissolve (2.0)
+stop music fadeout 3
+pause (1.5)
+"The next day..."
+
+scene Empty basement
+with Dissolve (2.0)
+pause (2.0)
+
+Bu "Something simple..."
+Bu " A Gryffon is not simple"
+Bu "That must have been my mistake...."
+pause (1.0)
+Bu "What could be simpler than a Gryffon?.... "
+Bu "...."
+Bu "A horse?"
+pause (1.0)
+Bu "No no…"
+Bu "Too difficult… "
+Bu "Something tinier…."
+pause (1.5)
+Bu "......."
+pause (2.5)
+Bu "A rabbit maybe?"
+Bu "..........."
+pause (2.0)
+Bu "Yes! A rabbit!"
+Bu ".... Lets start again"
+Bu "..........."
+pause (2.0)
+Bu "......."
+pause (2.5)
+Bu "MEUS UMBRA VETRO!"
+pause (1.6)
+"I tried concentrating the best I could."
+"So... when I opened my eyes...."
+pause (1.5)
+Bu "Eh...?"          
+pause (1.0)
+
+scene Event 1b
+with Dissolve (2.0)
+
+pause (2.0)
+
+Bu "W-what the...!?"
+Bu "This isn't what I wanted...."
+pause (1.0)
+Bu "...... at least it changed..."
+pause (1.0)
+scene Empty basement
+with Dissolve (2.0)
+pause (1.7)
+Bu "I am starting to do things a little better it seems."
+pause (1.0)
+Bu "Right. No time for breaks!"
+Bu "I must continue."
+Bu "..............."
+pause (3.0)
+Bu "MEUS UMBRA VETRO!!!"
+pause (2.0)
+
+scene black
+with Dissolve (2.0)
+pause (2.0)
+
+"I tried several times."
+pause (1.0)
+"Sometimes the shadow was more deformed..."
+pause (1.0)
+"...and sometimes it was less deformed."
+pause (1.0)
+"Though it was still VERY far to look like a rabbit at all."
+pause (1.0)
+"{size=-5}ugh... why am I so slow?...{/size}"
+pause (3.0)
+scene Empty basement
+with Dissolve (2.0)
+pause (1.5)
+
+Bu "PHEW!"
+Bu "I am tired now."
+Bu " I will continue practicing tomorrow."
+pause (1.3)
+Bu "I wonder if Alice and Finn had dinner already...."
+
+pause (2.4)
+
+scene black
+with Dissolve (2.0)
+pause (2.5)
+
+"The following day..."
+
+pause (2.0)
+scene Empty basement
+with Dissolve (2.0)
+pause (2.4)
+
+Bu "Time to practice again!"
+pause (1.6)
+
+scene black
+with Dissolve (2.0)
+pause (2.5)
+
+"Several hours pass by."
+pause (1.0)
+"My shadow slowly started to look less and less deformed."
+pause (1.0)
+"And suddenly..."
+pause (2.0)
+
+scene Event 1c
+with Dissolve (2.0)
+pause (2.5)
+
+Bu "....."
+pause (1.5)
+Bu "Well..."
+Bu "At least it has a shape now...."
+pause (1.5)
+scene Empty basement
+with Dissolve (2.0)
+pause (2.0)
+
+Bu " Time to get some rest!"
+
+pause (2.4)
+scene black
+with Dissolve (2.0)
+pause (2.5)
+
+"The following day..."
+pause (2.3)
+
+"This day was better than last."
+pause (1.0)
+"At the begining, even though I still couldn’t get what I wanted..."
+pause (1.0)
+"I was gradually able to turn my shadow into more complex shapes"
+pause (1.0)
+"And after several hours and more failed attempts..."
+pause (3.0)
+scene Empty basement
+with Dissolve (2.0)
+pause (2.0)
+Bu "Ahhh..."
+pause (1.0)
+Bu "Last time before I go to bed......"
+Bu "..........."
+pause (3.0)
+Bu "MEUS UMBRA VETRO!!"
+pause (1.7)
+"I opened my eyes slowly."
+pause (1.0)
+"I sort of knew I wouldn't see what I wanted..."
+pause (2.0)
+Bu " Ah!!"
+pause (2.5)
+scene Event 1d
+with Dissolve (2.0)
+pause (3.0)
+
+Bu "A...A rabbit?"
+pause (1.5)
+"Only this time I was wrong"
+pause (1.5)
+Bu "I...I did it....?...."
+pause (1.5)
+Bu "YES!!!"
+Bu "I DID IT!!! "
+scene Event lvlup
+with Dissolve (2.0)
+play music "Arcadia.mp3" fadein 1.0
+Bu "I REALLY DID IT!!!"
+Bu "ITS A RABBIT!!! ITS A RABBIT!!!"
+pause (0.7)
+Bu "After SO many troubles!!!"
+pause (1.5)
+Bu "I can't belive it! I finally did it!!"
+pause (2.5)
+stop music fadeout 1.0
+scene Empty basement
+with Dissolve (2.0)
+pause (2.0)
+Bu ".........."
+Bu "But its still not good enough."
+Bu "I have to be able to change it as fast as I cast the spell... "
+Bu " Ummmm..."
+pause (2.0)
+
+Bu " I must practice more...."
+pause (1.0)
+Bu "Its time to eat something, take a shower and go to bed."
+Bu "Today was a good day."
+Bu "I have to tell this to Finn!"
+pause (3.0)
+
+scene black
+with Dissolve (2.0)
+pause (3.0)
+
+"Several days pass"
+pause (1.0)
+"I practiced every day and did  my best to do better than the day before."
+pause (1.0)
+"That way"
+pause (1.0)
+"Step by step"
+pause (1.0)
+" And after a lot of hard work"
+pause (1.0)
+"I finally got better!"
+pause (1.0)
+"{size=-5}Wow... Even I can't belive it.{/size}"
+pause (3.0)
+scene Empty basement
+with Dissolve (2.0)
+pause (2.0)
+
+Bu "The final day is approaching"
+Bu "I think I should chose the shapes for my homework already"
+pause (1.5)
+Bu "Lets see... "
+pause (1.0)
+Bu " A rabbit for the first one..."
+Bu "The second could be......"
+pause (1.0)
+Bu "A wolf!"
+pause (1.0)
+Bu "And the third.... mmmm.... "
+Bu "......."
+Bu "It has to be something good and original...."
+pause (1.5)
+Bu "........"
+pause (1.0)
+Bu ".................."
+pause (1.5)
+Bu "...... A unicorn....?"
+pause (2.0)
+Bu "No............ "
+Bu "......... An angel?"
+pause (1.0)
+Bu "No no.."
+Bu "......."
+pause (1.5)
+Bu "....... A fairy?"
+pause (1.5)
+Bu "The fairy looked good last time I tried..."
+Bu "Mmmmmmm...."
+pause (2.0)
+Bu " Ok. The third one will be a Fairy!"
+pause (1.5)
+Bu "I will do some practice now..."
+
+scene black
+with Dissolve (2.0)
+pause (2.0)
+"Some hours later..."
+pause (2.5)
+scene Empty basement
+with Dissolve (2.0)
+pause (2.0)
+
+Bu "Everything went allright..."
+pause (1.5)
+Bu ".... Perhaps I could even attempt to get the extra credit?"
+Bu "Miss Vianen said we should change our shadow into someone we admire..."
+Bu " Mmmmm..."
+pause (2.0)
+Bu " I think I will do this instead of the rabbit shadow"
+pause (1.5)
+Bu "............ Who could it be......"
+pause (1.5)
+Bu " Mama?... Grandpa? My brother Athanasius?"
+pause (1.5)
+Bu "Maybe Finn or Asher?"
+pause (1.5)
+Bu "..........."
+Bu " This is difficult..."
+pause (2.0)
+Bu "............"
+pause (1.5)
+Bu "......mmmmmm...."
+pause (1.0)
+Bu "........."
+pause (2.0)
+Bu ".......Maybe........."
+pause (3.5)
+Bu "MEUS UMBRA VETRO!"
+pause (3.5)
+
+
+scene Event 1e with Dissolve (2.0):
+    xpos 0 ypos -400
+    pause (3.0)
+    linear 15.0 xpos 0 ypos 0
+    pause (3.3)
+    
+pause (2.5)
+play music "Touching Moments Two - Higher.mp3" fadein 1
+"A big long haired shadow appears in front of me"
+pause (1.5)
+" A shadow that brings so many bittersweet memories..."
+pause (2.5)
+scene Event 3c
+with Dissolve (2.0)
+pause (2.0)
+Bu "......."
+pause (2.4)
+Bu "....Maddy..."
+pause (1.5)
+"I stare at the wall." 
+pause (2.0)
+scene Event 3a
+with Dissolve (2.0)
+pause (2.0)
+"I unconciously reach out to touch it"
+pause (2.5)
+Bu "Maddy........"
+pause (1.5)
+Bu " I.... "
+pause (2.5)
+scene Event 3c
+with Dissolve (2.0)
+pause (3.0)
+Bu "......."
+pause (1.0)
+pause (1.0)
+Bu "Even after I promised I would forget about you..."
+pause (1.0)
+Bu "Event though I am angry at you for leaving..."
+pause (1.0)
+Bu"Even then..."
+pause (1.0)
+scene Event 3b
+with Dissolve (2.0)
+pause (2.0)
+Bu "I still miss you...."
+pause (2.0)
+"I was lost in thoughts and memories"
+pause (1.0)
+" I felt tears about to fall from my eyes"
+pause (1.0)
+" So I promply brushed them off with my hand"
+pause (2.5)
+scene Event 3c
+with Dissolve (2.0)
+pause (3.0)
+Bu " .... I can’t do this to myself..."
+pause (1.0)
+Bu "I can’t show this....."
+pause (2.0)
+Bu "..............."
+pause (1.5)
+Bu ".... I will chose a different person...."
+
+pause (3.0)
+scene black
+with Dissolve (2.0)
+stop music fadeout 3
+pause (3.0)
+
+"Soon after that..."
+pause (1.0)
+"the day of the presentations arrived..."
+pause (2.5)
+scene Class students
+with Dissolve (2.0)
+play music "g-t-1.mp3" fadein 3.0
+pause (2.0)
+
+show Finn worried
+with Dissolve (0.5)
+
+pause (1.5)
+
+Fi " I-I am s-so n-nervous, Buni-c-chan!"
+pause (1.0)
+Bu "I know! "
+Bu "So am I!"
+pause (1.0)
+Bu "But we worked very hard"
+pause (1.0)
+Fi "Y-yeah... "
+Fi "E-everything w-will be o-ok!"
+pause (1.0)
+Bu "Hopefully"
+pause (2.0)
+
+show Finn worried at left
+show Mei normal at right
+with Dissolve (1.0)
+
+Me "Class!!"
+Me " Silence please"
+pause (1.0)
+stop music fadeout 1
+Me "Please, take your seats"
+pause (1.0)
+Fi "I am going to sit, Buni-chan"
+Fi "I will be cheering for you"
+pause (1.0)
+Bu  "Thanks, I will be cheering for you too"
+show Finn smile
+with Dissolve (0.2)
+Fi " Thanks!"
+Fi "See you later, Buni-chan"
+hide Finn smile
+with moveoutleft
+hide Mei normal at right
+with Dissolve (1.0)
+show Mei normal at center
+with Dissolve (1.0)
+pause (2.0)
+
+Me " Thank you"
+pause (1.0)
+Me "As you may know"
+Me "Today finally is the day you will show your hard work."
+pause (1.0)
+Me "When I call you"
+Me "I want you to stand there, in front of that wall"
+Me "And show us what you have prepared."
+Me "Is that clear?"
+pause (1.5)
+"A unison ‘’YES’’ was heard, echoing in the big dark classroom"
+pause (1.0)
+show Mei smile
+with Dissolve (0.3)
+Me "Good!"
+pause (0.5)
+show Mei normal
+with Dissolve (0.3)
+Me "Let's start now...."
+pause (1.0)
+Me "Ainsworth, Leigh! You are the first one!"
+pause (2.0)
+scene black
+with Dissolve (2.0)
+pause (2.0)
+
+"Every time someone was called"
+pause (1.0)
+"My heart beat so fast, even if I wasn't my turn"
+pause (1.0)
+"Everyone did an amazing job."
+pause (1.0)
+"I felt incresingly nervous"
+pause (1.0)
+"And when I thought I was about to faint because of the stress..."
+pause (2.5)
+scene Class students
+show Mei normal
+with Dissolve (1.0)
+pause (2.0)
+
+Me "That was very good."
+Me "You can go back to your seat"
+pause (1.7)
+Me "Lets see..."
+pause (0.5)
+show Mei open
+with Dissolve (0.3)
+Me "Rothschild, Bunielle. You are next."
+pause (1.0)
+Bu "NNnngghhhh...."
+hide Mei open
+with Dissolve (0.3)
+show Finn smile
+with Dissolve (0.5)
+pause (1.0)
+Fi "D-do y-your b-best, Buni-chan!"
+pause (1.0)
+Bu "T-thanks, Finn..."
+pause (1.0)
+scene black
+with Dissolve (1.0)
+pause (2.0)
+"I walked and standed in front of everyone,"
+pause (1.0)
+" trying to look as serious and confident as I could"
+pause (1.0)
+"But the truth is..."
+pause (1.0)
+"That I was scared as hell!!!"
+pause (2.0)
+scene Class students
+show Mei normal at center
+with Dissolve (2.0)
+pause (1.0)
+
+show Mei open
+with Dissolve (0.3)
+
+Me "When I give you the signal I want you to change your shadow to the first shape."
+pause (1.0)
+Bu "Y-yes."
+pause (1.0)
+Me "Ready......."
+pause (2.0)
+show Mei grin
+with Dissolve (0.3)
+pause (0.2)
+Me "START!"
+pause (1.0)
+scene Event 4a
+with Dissolve (2.0)
+pause (1.5)
+Bu "MEUS UMBRA VETRO!!"
+pause (2.0)
+
+scene Event 5a with Dissolve (2.0):
+    xpos 0 ypos -400
+    pause (3.0)
+    linear 11.5 xpos 0 ypos 0
+    pause (3.3)
+
+
+"The shadow quickly changed into a wolf"
+pause (1.5)
+
+Me "A wolf."
+pause (1.0)
+Me "It looks very nice"
+pause (1.5)
+Bu "Thanks."
+pause (1.0)
+scene Class students
+show Mei normal at center
+with Dissolve (2.0)
+pause (1.0)
+Me "Ready for the second one?"
+pause (1.0)
+Bu "Yes!"
+show  Mei smile
+with Dissolve (0.3)
+pause (0.2)
+Me "Good!"
+pause (0.5)
+show Mei normal
+with Dissolve (0.3)
+pause (0.5)
+Me "Ready.............. "
+pause (1.0)
+show Mei grin
+with Dissolve (0.3)
+pause (0.2)
+Me "GO!!"
+pause (1.0)
+
+scene Event 4a
+with Dissolve (2.0)
+pause (1.5)
+Bu "MEUS UMBRA VETRO!!"
+pause (2.0)
+
+scene Event 5b with Dissolve (2.0):
+    xpos 0 ypos -400
+    pause (3.0)
+    linear 11.5 xpos 0 ypos 0
+    pause (3.3)
+    
+"This time I felt more comfortable"
+pause (1.0)
+"The shadow even changed its shape faster than the first time!"
+pause (1.0)
+"It quickly took the shape of a graceful fairy"
+pause (1.5)
+Me " A Fairy"
+Me " That's really pretty!"
+pause (1.0)
+Bu "Isn't it?"
+Bu "{size=-5}wow.. it does look very pretty indeed{/size}"
+pause (2.0)
+scene Class students
+show Mei normal at center
+with Dissolve (2.0)
+pause (1.0)
+
+Me "This is the last one, Miss Rothschild"
+show Mei smile
+with Dissolve (0.3)
+pause (0.3)
+Me "Are you ready?"
+pause (1.0)
+Bu "I am!"
+show Mei normal
+with Dissolve (0.3)
+pause (0.3)
+Me "Ready........."
+pause (1.5)
+show Mei grin
+with Dissolve (0.3)
+pause (0.3)
+Me "GO!!!"
+pause (1.5)
+scene black
+with Dissolve (1.0)
+"When I was about to cast I realized something horrible..."
+pause (1.0)
+"I never chose my 3rd shadow!"
+pause (1.0)
+"I have to choose it at the spot"
+pause (1.0)
+"....And pray for the best..."
+pause (2.0)
+
+label choice_1:
+
+menu:
+    "Mom.":
+         jump choice_mom
+
+    "Grandpa.":
+         jump choice_grandpa
+   
+    "Mystery shadow.":
+         jump choice_shadow
+
+label choice_mom:
+    pause(1.0)
+    scene Event 4b
+    with Dissolve (2.0)
+    pause (1.5)
+    "MEUS UMBRA VETRO!!!"
+    pause (1.5)
+    "With my heart beating fast"
+    pause (1.0)
+    "I raised my voice, casting clearly with no hesitations"
+    pause (1.0)
+    scene Event 5c with Dissolve (2.0):
+        xpos 0 ypos -400
+        pause (3.0)
+        linear 11.5 xpos 0 ypos 0
+        pause (3.3)
+    "Quickly, my mother's shadow formed"
+    pause (1.0)
+    "Standing, looking a little scary maybe"
+    pause (1.0)
+    "But seeing her, made me feel like in home again"
+    pause (1.0)
+    "I don't know if I managed to impress anyone"
+    pause (1.0)
+    "But I surely did impress myself!"
+    pause (1.0)
+    Bu "......"
+    pause (1.0)
+    Me "Oohh...Who is that?"
+    pause (1.0)
+    Bu "That's is my mother."
+    Bu "She's really strong and beautifu.l"
+    Bu "Plus, she's a really sweet and humble person."
+    Bu "She's one of the persons I admire the most."
+    pause (1.0)
+    Me "That's really sweet."
+    
+    jump choice_done
+
+label choice_grandpa:
+    pause(1.0)
+    scene Event 4b
+    with Dissolve (2.0)
+    pause (1.5)
+    "MEUS UMBRA VETRO!!!"
+    pause (1.5)
+    "With my heart beating fast"
+    pause (1.0)
+    "I raised my voice, casting clearly with no hesitations"
+    pause (1.0)
+    scene Event 5d with Dissolve (2.0):
+        xpos 0 ypos -400
+        pause (3.0)
+        linear 11.5 xpos 0 ypos 0
+        pause (3.3)
+    
+    "Quickly, my grandfather's shadow formed"
+    pause (1.0)
+    "Standing in front of the class, intimidating yet elegant"
+    pause (1.0)
+    "It made me realize how much I really miss him and my family"
+    pause (1.0)
+    "I don't know if I managed to impress anyone"
+    pause (1.0)
+    "But I surely did impress myself!"
+    pause (1.0)
+    Bu "......"
+    pause (1.0)
+    Me "Oohh...Who is that?"
+    pause (1.0)
+    Bu "That's is my grandfather"
+    Bu "He's a really strong and wise person"
+    Bu "He's also a very respected man."
+    Bu "I deeply admire him"
+    pause (1.0)
+    Me "That's impressive!"
+    jump choice_done
+    
+
+label choice_shadow:
+    pause (1.5)
+    Bu "........."
+    pause (1.5)
+    Bu "I-I can't do that..."
+    pause (1.0)
+    Bu "I will have to choose something different..."
+    pause (1.5)
+    jump choice_1
+    
+label choice_done:
+
+scene Class students
+show Mei normal at center
+with Dissolve (2.0)
+pause (1.0)
+
+Me "Well, I think that's enough"
+Me "You did a very good job, Miss Rothschild"
+show Mei grin
+with Dissolve (0.3)
+pause (0.2)
+
+Me "Congratulations"
+show Mei normal
+with Dissolve (0.3)
+pause (0.2)
+Me "You may go back to your seat"
+pause (1.0)
+Bu "Yes, Miss Vianen."
+pause (2.0)
+scene black
+with Dissolve (2.0)
+pause (3.5)
+scene Class empty
+show Finn normal
+with Dissolve (2.0)
+play music "Luminous Rain.mp3" fadein 1
+pause (1.5)
+
+Bu "At last it's over"
+pause (1.0)
+Fi "Y-yes!"
+show Finn gasp
+with Dissolve (0.3)
+pause (0.2)
+Fi "M-my heart w-was p-pounding so h-hard!"
+pause (0.7)
+Bu "And we both passed!"
+Bu "Isn't it great?"
+pause (0.7)
+show Finn smile
+with Dissolve (0.3)
+pause (0.2)
+Fi "Y-Yes!"
+show Finn smile open
+with Dissolve (0.3)
+pause (0.2)
+Fi "Y-your work w-was stunning, B-Buni-chan!"
+pause (1.0)
+Bu "Aah.."
+Bu "Not as much as yours, Finn"
+Bu "But thanks a lot"
+Bu "I never worked SO hard in my life!"
+show Finn smile 
+with Dissolve (0.3)
+pause (0.5)
+Fi "B-but it w-was worth, w-wasn’t it?"
+pause (1.0)
+Bu "Yes!"
+show Finn grin
+with Dissolve (0.3)
+pause (0.2)
+Fi "W-we h-have to c-celebrate!"
+pause (1.0)
+Bu "That’s a great idea!"
+pause (0.6)
+show Finn smile
+with Dissolve (0.3)
+pause (0.2)
+Fi " I-I will g-go to t-the kitchen t-to c-cook s-something t-tasty"
+pause (1.0)
+Bu "In that case I will get changed and then I will go to help you"
+pause (1.0)
+show Finn smile open
+with Dissolve (0.3)
+pause (0.5)
+Fi "O-ok"
+pause (1.0)
+Bu "I will go in a minute!"
+pause (2.5)
+scene black
+with Dissolve (2.0)
+pause (2.5)
+scene Bedroom
+with Dissolve (2.0)
+stop music fadeout (2.0)
+pause (1.3)
+
+Bu "Let's see..."
+Bu "Where's my apron? "
+pause (1.3)
+"I started looking for it when suddenly..."
+pause (1.0)
+"I noticed my shadow in the wall"
+pause (1.0)
+"And I had an idea."
+pause (1.0)
+Bu ".............."
+pause (1.3)
+Bu ".... I hope no one comes in...."
+pause (1.0)
+Bu "......."
+pause (2.5)
+Bu "Meus Umbra Vetro!!!!!"
+pause (1.0)
+scene Event 6a
+with Dissolve (2.0)
+pause (2.3)
+"My shadow's chest grew... "
+pause (1.0)
+"// I couldn't help it //"
+pause (1.0)
+
+Bu "... It doesn't look bad at all...."
+
+pause (2.0)
+
+"???" "Buni-Buni looks great with big boobs"
+pause (1.0)
+
+"I immediatly turned around to see who it was"
+pause (1.0)
+"And calmly ask them to leave"
+pause (1.0)
+scene Event 6b
+with Dissolve (0.3)
+
+Bu "{size=+20}KYAAAAAAAAAAAAAAAAA!!!{/size}"
+pause (1.0)
+"Only I didn't really do that..."
+pause (2.0)
+scene Bedroom
+with Dissolve (2.0)
+pause (1.3)
+show Asher normal
+with Dissolve (1.5)
+As "Hi!"
+
+play music "Mr Mealeys Mediocre Machine.mp3" fadein 1
+
+pause (0.6)
+Bu "A-ASHER!?"
+Bu "W-W-W-W-W-What are you doing here!?!?"
+pause (0.6)
+show  Asher smile close
+with Dissolve (0.3)
+pause (0.2)
+As "Jussst dropping by!"
+pause (0.6)
+Bu "WHEN DID YOU GET IN!?"
+pause (0.6)
+show  Asher grin
+with Dissolve (0.3)
+pause (0.2)
+As "While you where busy admiring your shadow's boobies"
+pause (0.6)
+Bu "Nnnghhh"
+pause (0.6)
+show  Asher question
+with Dissolve (0.3)
+pause (0.2)
+As "Are you still mad because I pointed you are flat chested as a boy?"
+As "Don’t tell me you are developing a trauma!!"
+pause (0.6)
+Bu "Asher, get out!"
+Bu "I have to get changed!"
+pause (0.6)
+show  Asher ewe
+with Dissolve (0.3)
+pause (0.2)
+As "Mmmmm..."
+As "You know..."
+show  Asher question2
+with Dissolve (0.3)
+pause (0.2)
+As "I still need to confirm you are a girl."
+pause (0.6)
+Bu "OUT!"
+pause (0.6)
+show  Asher ewe
+with Dissolve (0.3)
+pause (0.2)
+As " I see you are having your PMS."
+As"That's proof enough for the moment"
+pause (0.6)
+Bu ".............."
+pause (0.6)
+show  Asher smile
+with Dissolve (0.3)
+pause (0.2)
+As "Oops! Gotta run!"
+show  Asher grin
+with Dissolve (0.3)
+pause (0.2)
+As "Before you attack me with your drills"
+pause (0.6)
+Bu "With my d--"
+pause (0.6)
+show  Asher smile
+with Dissolve (0.3)
+pause (0.2)
+As "See you Buni-Buni!"
+hide Asher smile
+with moveoutright
+pause (0.6)
+Bu "Ah! Wait Asher!"
+Bu "Don't say anything about--"
+pause (1.4)
+Bu "..... He's gone...."
+stop music fadeout 1
+pause (0.6)
+Bu "How embarassing..."
+Bu "He saw that....."
+pause (1.2)
+Bu "I hope he just forgets about it..."
+pause (2.0)
+Bu "But I passed the class!"
+Bu "ALLRIGHT!"
+Bu "......."
+pause (0.7)
+Bu "I don't have to let myself settle down with this..."
+Bu "I have to work harder next time to excel in Dark arts!"
+Bu "I will do better next time surely!"
+pause (1.2)
+Bu "Ah! Finn is waiting for me."
+Bu "I better hurry"
+pause (2.5)
+scene black 
+with Dissolve (2.0)
+pause (2.5)
+play music "Music Box Theme.mp3" fadein 1
+scene Fin
+with Dissolve (2.0)
+pause (4.0)
+scene Fin2
+with Dissolve (2.0)
+pause (8.0)
+scene black 
+with Dissolve (2.0)
+stop music fadeout (1.0)
+pause (2.0)
+</poem>

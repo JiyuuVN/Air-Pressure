@@ -1,0 +1,2130 @@
+<poem>
+# You can place the script of your game in this file.
+
+init:
+    # Declare images below this line, using the image statement.
+    # eg. image eileen happy = "eileen_happy.png"
+    image l playful = "images/chara_playful.png"
+    image l sad = "images/chara_sad.png"
+    image l angry = "images/chara_angry.png"
+    image l bored = "images/chara_bored.png"
+    image l happy = "images/chara_happy.png"
+    image l surprised = "images/chara_surprised.png"
+    image l upset = "images/chara_upset.png"
+    image l cynical = "images/chara_cynical.png"
+    image l annoyed = "images/chara_annoyed.png"
+    image nurse = "images/nurse.png"
+    
+    image l playfulanim = Animation ("images/chara_playful.png", 0.5,
+                                                         "images/chara_playfulf1.png", 0.05,
+                                                         "images/chara_playfulf2.png", 0.05,
+                                                         "images/chara_playfulf3.png", 0.05,
+                                                         "images/chara_playfulf2.png", 0.05,
+                                                         "images/chara_playfulf3.png", 0.05,
+                                                         "images/chara_playfulf4.png", 0.05,
+                                                         "images/chara_playfulf5.png", 0.05,
+                                                         "images/chara_playfulf4.png", 0.05,
+                                                         "images/chara_playfulf5.png", 0.05,
+                                                         "images/chara_playfulf6.png", 0.05,
+                                                         "images/chara_playfulf7.png", 0.05,
+                                                         "images/chara_playfulf6.png", 0.05,
+                                                         "images/chara_playfulf7.png", 0.05,
+                                                         "images/chara_playful.png", 0.5)
+                                                        
+        
+        
+    image l sadanim = Animation ("images/chara_sad.png", 0.5,
+                                                         "images/chara_sadf1.png", 0.05,
+                                                         "images/chara_sadf2.png", 0.05,
+                                                         "images/chara_sadf3.png", 0.05,
+                                                         "images/chara_sadf2.png", 0.05,
+                                                         "images/chara_sadf3.png", 0.05,
+                                                         "images/chara_sadf4.png", 0.05,
+                                                         "images/chara_sadf5.png", 0.05,
+                                                         "images/chara_sadf4.png", 0.05,
+                                                         "images/chara_sadf5.png", 0.05,
+                                                         "images/chara_sadf6.png", 0.05,
+                                                         "images/chara_sadf7.png", 0.05,
+                                                         "images/chara_sadf6.png", 0.05,
+                                                         "images/chara_sadf7.png", 0.05,
+                                                         "images/chara_sad.png", 0.5)
+    
+    image l happyanim = Animation ("images/chara_happy.png", 0.5,
+                                                         "images/chara_happyf1.png", 0.05,
+                                                         "images/chara_happyf2.png", 0.05,
+                                                         "images/chara_happyf3.png", 0.05,
+                                                         "images/chara_happyf2.png", 0.05,
+                                                         "images/chara_happyf3.png", 0.05,
+                                                         "images/chara_happyf4.png", 0.05,
+                                                         "images/chara_happyf5.png", 0.05,
+                                                         "images/chara_happyf4.png", 0.05,
+                                                         "images/chara_happyf5.png", 0.05,
+                                                         "images/chara_happyf6.png", 0.05,
+                                                         "images/chara_happyf7.png", 0.05,
+                                                         "images/chara_happyf6.png", 0.05,
+                                                         "images/chara_happyf7.png", 0.05,
+                                                         "images/chara_happy.png", 0.5)
+    
+    image l annoyedanim = Animation ("images/chara_annoyed.png", 0.5,
+                                                         "images/chara_annoyedf1.png", 0.05,
+                                                         "images/chara_annoyedf2.png", 0.05,
+                                                         "images/chara_annoyedf3.png", 0.05,
+                                                         "images/chara_annoyedf2.png", 0.05,
+                                                         "images/chara_annoyedf3.png", 0.05,
+                                                         "images/chara_annoyedf4.png", 0.05,
+                                                         "images/chara_annoyedf5.png", 0.05,
+                                                         "images/chara_annoyedf4.png", 0.05,
+                                                         "images/chara_annoyedf5.png", 0.05,
+                                                         "images/chara_annoyedf6.png", 0.05,
+                                                         "images/chara_annoyedf7.png", 0.05,
+                                                         "images/chara_annoyedf6.png", 0.05,
+                                                         "images/chara_annoyedf7.png", 0.05,
+                                                         "images/chara_annoyed.png", 0.5)
+    
+    image l cynicalanim = Animation ("images/chara_cynical.png", 0.5,
+                                                         "images/chara_cynicalf1.png", 0.05,
+                                                         "images/chara_cynicalf2.png", 0.05,
+                                                         "images/chara_cynicalf3.png", 0.05,
+                                                         "images/chara_cynicalf2.png", 0.05,
+                                                         "images/chara_cynicalf3.png", 0.05,
+                                                         "images/chara_cynicalf4.png", 0.05,
+                                                         "images/chara_cynicalf5.png", 0.05,
+                                                         "images/chara_cynicalf4.png", 0.05,
+                                                         "images/chara_cynicalf5.png", 0.05,
+                                                         "images/chara_cynicalf6.png", 0.05,
+                                                         "images/chara_cynicalf7.png", 0.05,
+                                                         "images/chara_cynicalf6.png", 0.05,
+                                                         "images/chara_cynicalf7.png", 0.05,
+                                                         "images/chara_cynical.png", 0.5)
+    
+    image l angryanim = Animation ("images/chara_angry.png", 0.5,
+                                                         "images/chara_angryf1.png", 0.05,
+                                                         "images/chara_angryf2.png", 0.05,
+                                                         "images/chara_angryf3.png", 0.05,
+                                                         "images/chara_angryf2.png", 0.05,
+                                                         "images/chara_angryf3.png", 0.05,
+                                                         "images/chara_angryf4.png", 0.05,
+                                                         "images/chara_angryf5.png", 0.05,
+                                                         "images/chara_angryf4.png", 0.05,
+                                                         "images/chara_angryf5.png", 0.05,
+                                                         "images/chara_angryf6.png", 0.05,
+                                                         "images/chara_angryf7.png", 0.05,
+                                                         "images/chara_angryf6.png", 0.05,
+                                                         "images/chara_angryf7.png", 0.05,
+                                                         "images/chara_angry.png", 0.5)
+    image l boredanim = Animation ("images/chara_bored.png", 0.5,
+                                                         "images/chara_boredf1.png", 0.05,
+                                                         "images/chara_boredf2.png", 0.05,
+                                                         "images/chara_boredf3.png", 0.05,
+                                                         "images/chara_boredf2.png", 0.05,
+                                                         "images/chara_boredf3.png", 0.05,
+                                                         "images/chara_boredf4.png", 0.05,
+                                                         "images/chara_boredf5.png", 0.05,
+                                                         "images/chara_boredf4.png", 0.05,
+                                                         "images/chara_boredf5.png", 0.05,
+                                                         "images/chara_boredf6.png", 0.05,
+                                                         "images/chara_boredf7.png", 0.05,
+                                                         "images/chara_boredf6.png", 0.05,
+                                                         "images/chara_boredf7.png", 0.05,
+                                                         "images/chara_bored.png", 0.5)
+    
+    image intro01 = "images/intro01.png"
+    image bg black = "images/bg_black.png"
+    image bg house = "images/bg_house.png"
+    image bg park = "images/bg_park.png"
+    image bg town = "images/bg_town.png"
+    image bg hosp = "images/bg_hosp.png"
+    image bg end = "images/bg_black.png"
+    
+    image splash = "images/logo.png"
+    image end = "images/end.png"
+
+    
+    # Declare characters used by this game.
+    $ m = Character(what_color="#dabd34")
+    $ l = Character(u'Ли', color="#ffffff")
+    $ nurse = Character(u'Медсестра', color="#ffffff")
+
+    $_game_menu_screen = "_quit_prompt"
+
+    
+# The game starts here.
+
+
+label splashscreen:
+    $ renpy.pause(0)
+    scene black
+    with Pause(0.5)
+
+    show splash
+    with fade
+    with Pause(2.0)
+
+    scene black
+    with fade
+    with Pause(1.0)
+
+    return
+    
+
+
+
+label start:
+    scene intro01 with pixellate
+    play music "images/airpressure.mp3" 
+    m "{i}Мы встретились, когда я был подростком.{/i}"
+    $ config.rollback_enabled = False
+
+
+    m "{i}Она сразу же вцепилась в мою левую руку, и с тех пор не отпустила её.{/i}"
+    scene bg house with pixellate
+    m "{i}Прошло уже несколько лет. Мы всё ещё вместе.{/i}"
+    show l playful    
+    l "Как дела?"
+    
+    m "{i}Но я не уверен, хочу ли я так жить дальше.{/i}"
+    
+    "Нормально… "
+    show l happy
+    l "Вот и славно."
+    show l playful
+    l "Эй, помнишь, что сегодня за день? Годовщина нашей встречи."
+     
+    m "{i}Ну конечно же.{/i}"
+    show l happy
+    l "Ну так что, хочешь чем-нибудь заняться?"
+     
+    "Э. Ну…"
+ 
+    menu:
+        
+        "Давай просто побудем тут.":
+            "Давай просто побудем тут."
+            show l sad
+            l "Уверен? Как-то скучновато."
+            jump chapter1_1
+        "Пойду пройдусь.":
+            "…Пожалуй я пойду прогуляюсь."
+            show l sad
+            l "Э, ладно."
+            jump chapter1_3
+            
+            
+            
+label chapter1_1:
+#This is the route through which you get the girl. The dilemma is how you met.
+    show l happy
+    m "{i}Эта годовщина для меня фактически ничего не значит.{/i}"
+    
+    "Просто ещё один день…"
+    show l surprised
+    l "Что?"
+    
+    "Я…"
+    
+    menu:
+        
+        "Прости.":
+            "Прости, я забыл."
+            show l playful
+            l "Ха, не бойся."
+            jump chapter1_1q1
+        
+        "Я и так всё время с тобой.":
+            "Ну, мы ведь вместе уже так долго…"
+            show l playful
+            l "Верно…"
+            jump chapter1_1q2
+    
+    
+    
+label chapter1_1q1:
+
+    m "{i}Память странная штука. Это число у меня постоянно вылетает из головы.{/i}"
+    m "{i}Но я помню многое другое об этом дне, например музыку, что играла, когда мы впервые встретились.{/i}"
+    m "{i}Всё это навевает воспоминания.{/i}"
+    
+    show l sad
+    l "Ты точно в порядке?"  
+    "А, да. Просто задумался…"
+    
+    menu:
+        "…о дне, когда мы встретились.":
+            "О дне, когда мы встретились."
+            show l happy
+            l "О, правда?"
+            jump chapter1_1q3
+            
+        "Хочешь послушать музыку?":
+            "Хочешь послушать музыку?"
+            show l happy
+            l "Конечно."
+            jump chapter1_1q4
+        
+label chapter1_1q2:
+    
+    "…и, ну…"
+    
+    menu:
+        "Каждый день особенный по-своему!":
+            "С тобой каждый день особенный."
+            show l playful
+            l "Ха-ха, верно. Хорошо сказал! Лучше ничего придумать не мог?"
+            jump chapter1_1q5
+        
+        "Я просто не заметил число.":
+            "Наверно я просто не заметил, что этот день особенный."
+            show l upset
+            l "…"
+            jump chapter1_1q6
+
+label chapter1_1q3:
+    
+    "Да… Я думал о том, как много изменилось с тех пор."
+    show l happy
+    l "Ха-ха, надеюсь в лучшую сторону!"
+    m "{i}На самом деле, если вспомнить, как я жил до нашей встречи…{/i}"
+    m "{i}…я был куда счастливей.{/i}"
+    m "{i}Действительно ли мне стоит с ней оставаться?{/i}"
+    
+    menu:
+        "Да.":
+            m "{i}Да, хоть я и живу сейчас так, что сложно в это поверить…{/i}"
+            m "{i}…но мне так хорошо с ней, что я не могу представить себе жизнь без неё.{/i}"
+            scene bg black with pixellate
+            m "{i}Может жизнь раньше и была лучше…{/i}"
+            m "{i}…но я не уверен, что жизнь без неё будет лучше, чем сейчас.{/i}"
+            m "{i}Может, если мы постараемся вместе, то сможем изменить нашу жизнь к лучшему.{/i}"
+            jump chapter2_1
+        
+        "Не уверен.":
+            m "{i}Я не знаю.{/i}"
+            show l surprised
+            l "Эй, может тебе сходить подышать свежим воздухом?"
+            scene bg black with pixellate
+            m "{i}Она фактически силком вытащила меня за дверь.{/i}"
+            m "{i}Надеюсь, она не обидится на моё отсутствие энтузиазма.{/i}"
+            m "{i}У меня нет сил, чтобы ей сопротивляться.{/i}"
+            jump chapter2_3
+
+label chapter1_1q4:
+    
+    m "{i}Интересно, помнит ли она такие мелочи.{/i}"
+    show l happy
+    l "…"
+    m "{i}…{/i}"
+    show l bored
+    l "…"
+    l "Мм?"
+    "Помнишь эту песню?"
+    show l surprised
+    l "А…"
+    show l playful
+    l "Мм.. Я её наверно не застала."
+    "Эй, ты не моложе меня!"
+    m "{i}И я купил этот диск на той неделе, когда мы встретились.{/i}"
+    show l surprised
+    l "Прости."
+    m "{i}Я думал, она вспомнит… Что делать?{/i}"
+    
+    menu:
+        "Простить.":
+            "Да не волнуйся."
+            show l sad
+            l "Правда, прости! Я и не знала, что она так важна."
+            "Это всё мелочи."
+            scene bg black with pixellate
+            m "{i}Мы дослушали диск до конца.{/i}"
+            m "{i}Я не смог ей сказать, насколько это было для меня важно.{/i}"
+            m "{i}Может она мне нужнее, чем я ей.{/i}"
+            jump chapter2_1
+        
+        "Заставить её прочувствовать вину.":
+            "Правда? Эта песня играла, когда мы впервые встретились!"
+            l "..!"
+            show l sad
+            l "М… Мне правда очень жаль. Особенно после того, как я к тебе пристала из-за даты."
+            "…"
+            show l upset
+            l "…"
+            "…Почему бы нам не проветриться?"
+            scene bg black with pixellate
+            m "{i}Может я был к ней не справедлив.{/i}"
+            m "{i}Надеюсь, смена обстановки поможет нам расслабиться.{/i}"
+            m "{i}Мы так много торчим дома, что прогулка по парку нам точно не помешает.{/i}"
+            jump chapter2_2
+
+label chapter1_1q5:
+    
+    "Нет, я серьёзно."
+    show l surprised
+    l "Ха-ха, прааааавда?"
+    
+    menu:
+        "Да.":
+            "Да. Ха-ха, может я и переборщил немного, но я каждый день радуюсь, что ты есть у меня."
+            show l playful
+            l "Хе-хе, как мило."
+            scene bg black with pixellate
+            m "{i}Да, я сказал это только для того, чтобы её порадовать.{/i}"
+            m "{i}И чтобы не чувствовать себя так паршиво.{/i}"
+            m "{i}Я совсем не рад, что забыл об этом дне. Надеюсь, она не против.{/i}"
+            jump chapter2_1
+        
+        "Нет.":
+            "Нет, нет, я тебя просто дразню."
+            show l sad
+            l "Это подло."
+            "?.."
+            show l upset
+            l "…"
+            "Прости…"
+            scene bg black with pixellate
+            m "{i}Она дулась пару часов.{/i}"
+            m "{i}Потом она сказала, что хочет пройтись.{/i}"
+            m "{i}Я чувствовал, что должен извиниться, и потому, решил пойти с ней.{/i}"
+            jump chapter2_2
+            
+            
+
+label chapter1_1q6:
+    
+    show l annoyed
+    l "Э-это просто жестоко."
+    l "Мало того, что ты забыл о сегодняшнем дне, так тебя это ещё и не волнует."
+    "…"
+    menu:
+        "Прости.":
+            "Прости."
+            show l upset
+            l "…"
+            scene bg black with pixellate
+            m "{i}Она захотела подышать свежим воздухом, и я последовал за ней. Всяко лучше, чем сидеть без дела.{/i}"
+            m "{i}Не знаю, почему всё так вышло. Наверно я просто был раздражён.{/i}"
+            m "{i}Вечно я всё на ней вымещаю.{/i}"
+            jump chapter2_2
+        
+        "…":
+            show l angry
+            l "Тебе что, нечего даже ответить?!"
+            l "…"
+            scene bg black with pixellate
+            m "{i}Не знаю почему, но мне кажется, что  у неё нет никакой причины злиться.{/i}"
+            m "{i}У меня ничего хорошего или приятного с этим днём не ассоциируется.{/i}"
+            m "{i}И всё же я пошёл за ней, когда она в ярости выбежала наружу.{/i}"
+            jump chapter2_2
+
+#label chapter1_2:
+#This is the average route. The dilemma is being seen?
+    
+#    "This is chapter1_2"
+#THIS CHAPTER NO LONGER NEEDED!!!    
+    
+    
+
+
+
+
+####START OF CHAPTER1_3!#######
+label chapter1_3:
+#This is the lose the girl route. The dilemma is being alone.
+    
+    scene bg town
+    m "{i}Я решил прогуляться по городу.{/i}"
+    m "{i}Всюду люди. Все куда-то спешат.{/i}"
+    m "{i}Я хотел затеряться в толпе.{/i}"
+    m "{i}Может даже ненадолго почувствовать себя нормальным.{/i}"
+    m "{i}Но… Я кого-то слышу.{/i}"
+    
+    menu:
+        "Надо остановиться.":
+            l "Эй!"
+            l "Эй, погоди!"
+            show l playful
+            "Ох, привет."
+            jump chapter1_3q1
+        
+        "Продолжать идти.":
+            m "{i}Я не останавливаюсь.{/i}"
+            show l sad
+            l "Эй, ты меня что, игнорируешь?"
+            jump chapter1_3q2
+    
+
+label chapter1_3q1:
+    
+    m "{i}Что она тут делает?{/i}"
+    show l happy
+    l "И-извини… Я подумала, может ты захочешь прогуляться вместе…"
+    "Хмм…"
+    
+    menu:
+        "Да, пожалуй, я не против.":
+            "Ага, рад что ты здесь."
+            l "Я волновалась. Ничего не случилось?"
+            jump chapter1_3q3
+        
+        "Нет, мне и так неплохо.":
+            "Вообще-то я хотел кое-что сделать в одиночку."
+            show l playful
+            l "О-о-о, ясненько…"
+            "Э?"
+            l "Хочешь мне что-то купить, мм? Хорошо, отстаю от тебя."
+            jump chapter1_3q4
+
+label chapter1_3q2:
+    
+    "…"
+    show l surprised
+    l "Игнорируешь, верно ведь?!"
+    "Ух…"
+    
+    menu:
+        "Нет.":
+            "Нет, извини. Просто задумался."
+            show l sad
+            l "Правда?"
+            l "И о чём?"
+            jump chapter1_3q5
+        
+        "…":
+            "…"
+            show l angry
+            l "Эй!!!"
+            "Я хочу побыть один. Извини."
+            show l upset
+            l "Ясно. Как хочешь."
+            jump chapter1_3q6
+
+label chapter1_3q3:
+    
+    "Нет, всё в порядке."
+    m "{i}По крайней мере теперь, когда ты здесь.{/i}"
+    show l happy
+    l "А, я рада."
+    l "Ну что, хочешь куда-нибудь пойти?"
+    "Ага…"
+    
+    menu:
+        "Пошли, посидим где-нибудь в тишине.":
+            "Конечно, найдём какое-нибудь тихое местечко? Тут так шумно."
+            show l playful
+            l "Как на счёт того парка?"
+            scene bg black with pixellate
+            m "{i}Всё-таки я рад, что она объявилась.{/i}"
+            m "{i}Но не могу не разочароваться в себе.{/i}"
+            m "{i}Я думал, что смогу обойтись без неё…{/i}"
+            jump chapter2_3
+        
+        "Почему бы не пойти домой?":
+            "Я устал, пошли домой."
+            l "О, ладно."
+            scene bg black with pixellate
+            m "{i}Я рад, что она появилась.{/i}"
+            m "{i}И немного зол, что не смог продержаться без неё хоть немного.{/i}"
+            m "{i}Неужели я теперь с ней навсегда…{/i}"
+            jump chapter2_1
+
+label chapter1_3q4:
+    
+    hide l
+    m "{i}Нет, правда. Я просто хотел побыть один.{/i}"
+    m "{i}Я бесцельно бродил пару часов.{/i}"
+    m "{i}Не знаю уж, от одиночества или от усталости, но от всего этого шума у меня закружилась голова.{/i}"
+    m "{i}…{/i}"
+    
+    menu:
+        "Как мне хочется, чтобы она сейчас была рядом.":
+            m "{i}Как мне хочется, чтобы она сейчас была рядом.{/i}"
+            show l surprised
+            l "?.."
+            l "Ты в порядке?"
+            "…"
+            scene bg black with pixellate
+            m "{i}Не знаю уж, как она это делает.{/i}"
+            m "{i}Всегда появляется в тот же миг.{/i}"
+            m "{i}Всё это время ходила за мной?{/i}"
+            jump chapter2_3
+            
+        
+        "Всё будет хорошо.":
+            m "{i}Я решил передохнуть и оглянулся в поисках, где бы присесть.{/i}"
+            scene bg black with pixellate
+            m "{i}Тот парк неподалёку выглядит привлекательно.{/i}"
+            m "{i}Я рад, что смог немного побыть один.{/i}"
+            m "{i}Один, без её постоянного присутствия.{/i}"
+            jump chapter2_4
+
+label chapter1_3q5:
+    
+    show l playful
+    l "Что за мысли бороздят пустынные просторы твоей головы?"
+    "Ха-ха!"
+    m "{i}От всей этой толкотни у меня разболелась голова. Но, благодаря ей, боль проходит.{/i}"
+    show l happy
+    l "Хехехе."
+    m "{i}Мне становится легче просто потому, что она рядом!{/i}"
+    
+    menu:
+        "Я так рад.":
+            m "{i}Я рад.{/i}"
+            show l sad
+            l "Ты в порядке? Хватит витать в облаках."
+            "Да, да. В полном. Хочешь передохнуть где-нибудь в тишине?"
+            show l happy
+            l "Да!"
+            scene bg black with pixellate
+            m "{i}Мы вместе направляемся в парк.{/i}"
+            m "{i}По пути, моя голова забита мыслями о том, как же сильно я в ней нуждаюсь.{/i}"
+            m "{i}Я всё ещё не уверен, как мне обо всём этом думать…{/i}"
+            jump chapter2_3
+        
+        "Ненавижу.":
+            m "{i}Ненавижу.{/i}"
+            m "{i}Не хочу быть привязанным к ней навеки!{/i}"
+            show l sad
+            l "Ты в порядке? Хватит витать в облаках."
+            "Ага… Слушай, увидимся дома, ладно?"
+            show l upset
+            l "А, да…"
+            scene bg black with pixellate
+            m "{i}Я иду куда-то, где смогу побыть один.{/i}"
+            m "{i}Ноги несут меня, полного надежды спокойно всё обдумать, в близлежащий парк.{/i}"
+            jump chapter2_4
+            
+
+label chapter1_3q6:
+    
+    "…"
+    l "…"
+    menu:
+        "Слушай, ты не виновата…":
+            "Слушай, ты не виновата… Я просто хотел побыть один."
+            show l sad
+            l "…"
+            scene bg black with pixellate
+            m "{i}Я знаю, что буду пытаться загладить свою вину, как бы я ни провинился.{/i}"
+            m "{i}Я просто дурак.{/i}"
+            m "{i}Знаю же, что без неё мне и дня не прожить.{/i}"
+            jump chapter2_4
+        "Ты что здесь вообще забыла?":
+            "Почему ты здесь?"
+            show l annoyed
+            l "По глупости решила, что нужна тебе."
+            l "Похоже, я заблуждалась!"
+            "…"
+            l "!.."
+            l "Угх!"
+            scene bg black with pixellate
+            m "{i}Ну что я за идиот…{/i}"
+            m "{i}Она в ярости убежала…{/i}"
+            m "{i}А я идиот, потому что последовал за ней.{/i}"
+            jump chapter2_2
+
+
+
+#######THIS IS THE START OF CHAPTER2_1######
+label chapter2_1:
+#This is the continuation of getting the girl route. The dilemma is reliance.
+    scene bg house with pixellate
+    m "{i}Прошла пара часов. В голове начал зарождаться вопрос…{/i}"
+    "Эй…"
+    show l bored
+    l "Мм?"
+    "Я тут подумал…"
+    menu:
+        "Почему ты здесь?":
+            "Почему ты здесь?"
+            l "Потому что ты хотел, чтобы мы остались дома?.."
+            "Я не об этом. Почему ты осталась со мной?"
+            show l happy
+            l "А, тут всё просто. Я ведь тебе нужна, так?"
+            l "Ну а пока я тебе нужна, я буду с тобой."
+            jump chapter2_1q1
+        "Я тебе нравлюсь?":
+            "Я тебе нравлюсь?"
+            show l surprised
+            l "Ха-ха, ну и странный вопрос. Конечно же да."
+            "Но почему?"
+            show l happy
+            l "Почему бы и нет?"
+            jump chapter2_1q2
+
+label chapter2_1q1:
+    m "{i}Нужна ли она мне?{/i}"
+    m "{i}Наверное, да. Но…{/i}"
+    menu:
+        "С чего ты это взяла?":
+            "С чего ты это взяла?"
+            show l surprised
+            l "Ч-что? Я тебе не нужна?"
+            "А! Нет, я не это имел в виду…"
+            l "…"
+            jump chapter2_1q3
+        "Это настолько очевидно?":
+            "Это настолько очевидно?"
+            show l playful
+            l "Ха-ха, ну…"
+            "…"
+            l "Хахаха, не смотри на меня так. Нет ничего плохого, в том, чтобы нуждаться в ком то, так ведь?"
+            jump chapter2_1q4
+            
+            
+label chapter2_1q2:
+    m "{i}Стыдно признаться, но меня это и вправду это очень волнует…{/i}"
+    "Не знаю… Думаю…"
+    menu:
+        "Я не очень хороший человек.":
+            "Я не очень хороший человек."
+            show l happy
+            l "Я бы поспорила."
+            "Хмм…"
+            show l playful
+            l "Да и я всегда помогаю тебе быть хорошим!"
+            jump chapter2_1q5
+        "Может мне нужно больше друзей.":
+            "Может мне нужно больше друзей."
+            show l sad
+            l "Хмф."
+            l "Больше друзей или друзья получше?"
+            jump chapter2_1q6
+            
+            
+label chapter2_1q3:
+    "Да нужна ты мне, нужна."
+    show l upset
+    l "…"
+    show l sad
+    l "Правда?.."
+    menu:
+        "Да.":
+            "Да. Жить без тебя не могу."
+            show l happy
+            m "{i}Ты откуда это взял?{/i}" #Не слишком
+            scene bg black with pixellate
+            m "{i}Я и сам удивлён.{/i}"
+            m "{i}Но это правда. Я полагаюсь на неё при столкновении с любыми проблемами.{/i}"
+            m "{i}Не знаю хорошо это или нет…{/i}"
+            jump chapter3_1
+        "Ээ…":
+            "Ээ… Да. Конечно."
+            show l happy
+            l "Хе."
+            scene bg black with pixellate
+            m "{i}Надеюсь, она не заметила моей запинки.{/i}"
+            m "{i}Она мне нужна, но мне не особо хочется признавать.{/i}"
+            m "{i}Может мне больше не хочется во всём полагаться на неё?{/i}"
+            jump chapter3_2
+            
+    
+label chapter2_1q4:
+    "Нет, конечно нет."
+    show l happy
+    m "{i}Хоть это и заставляет задуматься…{/i}"
+    m "{i}Здоровая это нужда или нет?{/i}"
+    menu:
+        "Нет в этом ничего страшного.":
+            m "{i}Нет в этом ничего страшного.{/i}"
+            m "{i}Всё в порядке.{/i}"
+            m "{i}Кроме того я ей тоже нужен.{/i}"
+            scene bg black with pixellate
+            m "{i}Я знаю, что завишу от неё. Я безнадёжен.{/i}"
+            m "{i}Без неё я буду слаб.{/i}"
+            m "{i}Радоваться ли мне, что всё сложилось так?{/i}"
+            jump chapter3_1
+        "Я бы мог быть более независимым.":
+            m "{i}Я бы мог быть более независимым.{/i}"
+            m "{i}Но это не значит, что я её просто брошу.{/i}"
+            m "{i}Мы ведь можем быть независимыми вместе!{/i}" #Давай бояться вместе блеать!
+            scene bg black with pixellate
+            m "{i}Да, звучит нелепо.{/i}"
+            m "{i}Я так привык полагаться на неё, что вряд ли смогу без неё что-либо сделать.{/i}"
+            m "{i}Что плохого в удобстве?{/i}"
+            jump chapter3_2
+            
+            
+label chapter2_1q5:
+    m "{i}Э? Я из-за этого на неё полагаюсь?{/i}"
+    m "{i}Это всё, что я получаю от наших отношений?{/i}"
+    menu:
+        "Да.":
+            m "{i}Да. Как бы больно ни было это признавать.{/i}"
+            m "{i}Я просто проецирую себя на неё.{/i}"
+            m "{i}Без неё мне не на ком будет выместить свою вину, не на кого будет переложить все свои проблемы.{/i}"
+            scene bg black with pixellate
+            m "{i}Она, похоже, не считает меня плохим…{/i}"
+            m "{i}Но так ли это на самом деле?{/i}"
+            m "{i}Я не смогу стать к ней ближе, пока не научусь ей доверять.{/i}"
+            jump chapter3_2
+        "Нет.":
+            m "{i}Нет, это не главное.{/i}"
+            m "{i}Она часть моей жизни. Она фактически часть меня!{/i}" #Худшая, ага: мозг.
+            scene bg black with pixellate
+            m "{i}Может, я слишком от неё завишу.{/i}"
+            m "{i}Но плохо ли это?{/i}" #Да. Если ты ещё раз об этом спросишь, я пробью лбом монитор.
+            m "{i}С нею я чувствую себя чуточку лучше, чем я есть.{/i}"
+            jump chapter3_1
+            
+            
+label chapter2_1q6:
+    "Т-ты с чего это взяла?"
+    show l upset
+    l "…"
+    m "{i}Ух… Лучше мне быстро что-нибудь придумать…{/i}"
+    "Слушай…"
+    menu:
+        "Я не это имел в виду.":
+            "Я не это имел в виду."
+            show l sad
+            l "…"
+            "Тебе разве не хочется с новыми людьми познакомиться?"
+            show l bored
+            l "Мне больше никто не нужен…"
+            scene bg black with pixellate
+            m "{i}Интересно к чему это она.{/i}"
+            m "{i}Она ведь кроме меня никого не знает. Мне, если честно, её немного жаль.{/i}" #Боромир, коварная ты сука…
+            m "{i}Я б хотел, чтобы она познакомилась с кем-то еще. Но этого не хочется ей.{/i}"
+            jump chapter3_2
+        "Что плохого в том, что я хочу больше друзей?":
+            "Разве плохо, что я хочу иметь больше друзей?" #Ты вырастешь в большого и страшного дракона от жадности и разрушишь весь Понивилль…
+            l "…"
+            show l upset
+            l "Я боюсь… что больше буду тебе не нужна."
+            "…"
+            scene bg black with pixellate
+            m "{i}Конечно она волнуется.{/i}"
+            m "{i}Я чувствую, как мы отдаляемся друг от друга.{/i}"
+            m "{i}Похоже, я начинаю меняться.{/i}" #Покемон эволюционирует… Эволюционирует… В элегантные шорты!
+            jump chapter3_3
+
+            
+            
+            
+#####START OF CHAPTER2_2###########           
+label chapter2_2:
+    scene bg park with pixellate
+    show l bored
+    m "{i}Мы идём бок о бок.{/i}"
+    m "{i}Ну… я, правда, немного позади.{/i}"
+    m "{i}Она молчит. Похоже, всё ещё сердится.{/i}"
+    menu:
+        "Извиниться.":
+            "Ээ, слушай, мне жаль."
+            l "…"
+            show l upset
+            l "Знаю."
+            jump chapter2_2q1
+        
+        "Stay silent.":
+            "…"
+            l "…"
+            show l angry
+            l "…"
+            l "Ты так и будешь молчать?"
+            jump chapter2_2q2
+            
+    
+    
+label chapter2_2q1:
+    show l sad
+    l "Но почему тебе жаль?.."
+    m "{i}Э?{/i}"
+    m "{i}Это разве не очевидно?{/i}"
+    menu:
+        "Я виноват.":
+            "Я виноват."
+            "Прости, я порой бываю так неблагодарен."
+            l "…"
+            show l happy
+            l "Ничего страшного…" #кроме воооон того мозгового слизня. И, может, каннибала притаевшегося в кустах.
+            jump chapter2_2q3
+        
+        "Потому что.":
+            "Просто жаль."
+            show l upset
+            l "Ох."
+            "Ну, я не знаю."
+            jump chapter2_2q4
+    
+    
+    
+label chapter2_2q2:
+    "…"
+    "Не могу ничего придумать…"
+    show l cynical
+    l "Хе."
+    l "Я устала. Не хочу больше тебе помогать."
+    show l bored
+    l "Ты слишком от меня зависишь." #Голос разума. От наркоты. джекичан.жпг
+    "…"
+    menu:
+        "Погоди-ка…":
+            "Погоди-ка…"
+            show l annoyed
+            l "…"
+            jump chapter2_2q5
+        
+        "Мне плевать…":
+            "Мне плевать…"
+            show l cynical
+            l "Вот как?"
+            jump chapter2_2q6
+        
+    
+    
+    
+label chapter2_2q3:
+    m "{i}Вечно забываю, как она мне помогает.{/i}"
+    m "{i}Постоянно на неё срываюсь.{/i}"
+    m "{i}Может, я слишком в ней сомневаюсь?..{/i}"
+    menu:
+        "Да.":
+            m "{i}Да, надо ей сильнее доверять.{/i}"
+            m "{i}Я ей могу верить больше чем себе.{/i}" 
+            m "{i}И куда больше, чем другим людям.{/i}" #Хикки! Точно! ГГ NHK! Тот правда с наркоты больше с мебелью общался…
+            show l playful
+            l "?.."
+            "Да ничего."
+            m "{i}Где бы я был без неё?{/i}" #На хорошей должности в приличной фирме с настоящей девушкой? Ну или с ножом в кишках где-нибудь в лесу. Всё относительно.
+            scene bg black with pixellate
+            m "{i}Мы идём домой.{/i}"
+            m "{i}Хватит уже волноваться о всяких глупостях.{/i}"
+            m "{i}По крайней мере, можно попытаться.{/i}"
+            jump chapter3_1
+            
+        "Нет.":
+            m "{i}Нет, не могу я всё это чувствовать без причины.{/i}"
+            m "{i}Надо себе чуть больше верить.{/i}"
+            m "{i}Но не знаю… Страшно быть независимым.{/i}"
+            show l playful
+            l "?.."
+            "Хе, ничего!"
+            m "{i}Когда я начал на неё так сильно полагаться?{/i}"
+            scene bg black with pixellate
+            m "{i}По пути домой, я продолжал думать.{/i}"
+            m "{i}Я б извинился, но что-то не хочется.{/i}"
+            m "{i}С другой стороны злить её тоже не охота.{/i}"
+            m "{i}Не знаю… Что делать?{/i}" #*Классический школьный совет*
+            jump chapter3_2
+    
+    
+label chapter2_2q4:
+    show l sad
+    l "Э. Ладно."
+    "Ну…"
+    menu:
+        "Я не знаю, как по-другому всё исправить.":
+            "Я не знаю, что ещё я могу сделать, чтобы всё исправить."
+            show l happy
+            l "Ну… Ты мог бы доверять мне немного больше."
+            "Наверно."
+            show l playful
+            l "И быть благодарным за то, что я тебе помогаю."
+            m "{i}Конечно, она права.{/i}"
+            m "{i}Я все время забываю, как много она помогала мне за эти годы.{/i}"
+            scene bg black with pixellate
+            m "{i}Мы вместе пошли домой.{/i}"
+            m "{i}Я думал о том, стоит ли мне больше ей доверять.{/i}"
+            m "{i}Возможно, это единственный способ показать ей, что она нужна мне.{/i}"
+            jump chapter3_1
+            
+        
+        "Тогда не принимай!":
+            "Не принимай мои извинения!"
+            show l surprised
+            l "!!!"
+            "Ах, не знаю, почему я волнуюсь."
+            "Я должен был знать, что ты это скажешь." 
+            show l upset
+            l "…"
+            scene bg black with pixellate
+            m "{i}Я, наверно, ничего не могу от нее утаить.{/i}"
+            m "{i}Она всегда всё узнает.{/i}"
+            m "{i}И почему только я ей позволяю?{/i}"
+            m "{i}Я хочу, чтобы она меня проверяла?{/i}" #
+            jump chapter3_2
+    
+    
+    
+label chapter2_2q5:
+    "С каких это пор ты думаешь, что я слишком полагаюсь на тебя?"
+    show l upset
+    l "…"
+    "Может так и есть… Но не обижайся на меня."
+    show l annoyed
+    l "Хмм."
+    m "{i}Возможно, я прошу слишком много.{/i}"
+    menu:
+        "Извиниться.":
+            "Прости…"
+            show l upset
+            l "Да ничего."
+            "Я знаю, я был не прав."
+            "Пожалуйста, помогай мне и дальше." # 
+            l "…"
+            scene bg black with pixellate
+            m "{i}Мы вместе пошли домой.{/i}"
+            m "{i}Надеюсь, я успокоил её немного.{/i}"
+            m "{i}Возможно, в будущем она сделает из меня человека.{/i}"
+            jump chapter3_2
+        
+
+        "Это не беспочвенно.":
+            "На то есть причина."
+            show l surprised
+            l "..!"
+            "Ты всё равно тут только из-за меня!"
+            "Ты мне не нужна, если ты будешь такой." # 
+            show l upset
+            l "…"
+            scene bg black with pixellate
+            m "{i}Она мне больше не нравится.{/i}"
+            m "{i}Я устал с ней мириться.{/i}" #
+            m "{i}Да, я ужасен, но мне плевать.{/i}"
+            m "{i}Мы пошли домой молча.{/i}"
+            jump chapter3_3
+            
+    
+    
+    
+label chapter2_2q6:
+    show l cynical
+    l "Значит всё будет в порядке, если я совсем перестану тебе помогать?"
+    "Ты так не сделаешь…"
+    l "Хех…"
+    show l angry
+    l "Ты думаешь, что сможешь жить без моей помощи?" # Вут?
+    "Ну…"
+    menu:
+        "Нет…":
+            "Нет, ты права…"
+            show l annoyed
+            l "…"
+            "Прости."
+            "Пожалуйста, не злись на меня!"
+            show l upset
+            l "…"
+            scene bg black with pixellate
+            m "{i}Я не хотел быть один.{/i}"
+            m "{i}Может я просто использовал её, чтобы не чувствовать себя одиноким?{/i}"
+            m "{i}Я жалок.{/i}"
+            jump chapter3_2
+        
+        "Да!":
+            "Да. Ну, я хотел бы попробовать."
+            show l cynical
+            l "Хех, и прибежишь ко мне, как только у тебя ничего не получится?"
+            "Не прибегу если ты не будешь помогать."
+            show l surprised
+            l "…"
+            show l upset
+            l "Не говори так."
+            "…"
+            l "Ты знаешь, я всё время тебе помогаю."
+            l "Даже если всё совсем плохо."
+            "…"
+            scene bg black with pixellate
+            m "{i}Мы спорили по пути домой.{/i}"
+            m "{i}Наверное, я больше не хочу, чтобы она была рядом.{/i}"
+            m "{i}Она может пригрозить мне, что уйдет, но я думаю, она боится этого больше меня.{/i}"
+            jump chapter3_3
+
+            
+            
+
+
+
+    
+label chapter2_3:
+#This is the continuation of the average route. The girl is happy
+
+    scene bg park with pixellate
+    show l happy
+    m "{i}Мы сели на траве в парке.{/i}"
+    m "{i}Она такая жизнерадостная.{/i}" #TODO
+    m "{i} Это только показывает, как плохо она порой меня понимает.{/i}" #TODO
+    show l playful
+    l "Неплохо здесь, да?"
+    m "{i}Да, точно…{/i}"
+    m "{i}Я знаю, что был неправ. Пожалуй, мне следует…{/i}"
+    menu:
+        "Купить ей мороженное.":
+            m "{i}Да, мне следует брать пример с неё и радоваться жизни.{/i}"
+            "Эй, не хочешь мороженного?"
+            show l happy
+            l "Ага, давай!"
+            m "{i}…{/i}"
+            jump chapter2_3q1
+        "Признаться.":
+            m "{i}Я должен сказать ей.{/i}"
+            "Ммм, слушай..."
+            show l happy
+            l "?"
+            "Тебе не кажется… Тебе не кажется, что я слишком зависим от тебя?"
+            show l surprised
+            l "Что ты имеешь в виду? Мы же друзья."
+            jump chapter2_3q2
+
+label chapter2_3q1:
+    m "{i}Я купил мороженное.{/i}"
+    m "{i}As we sat around eating, I started to think if I could bring up the subject in a gentle way.{/i}" #TODO
+    "Эй."
+    "Ммм?"
+    "Не думаешь, что…"
+    menu:
+        "…мы могли бы сесть у реки?":
+            "У реки могут быть смешные утки."
+            show l playful
+            l "А, да. Ха-ха. Думаешь, утки едят мороженное?"
+            m "{i}Они всё едят.{/i}"
+            jump chapter2_3q3
+        "…я слишком на тебя полагаюсь?":
+            "…я слишком на тебя полагаюсь?"
+            show l sad
+            l "Ты так думаешь?"
+            "Не знаю."
+            l "Разве это так плохо, полагаться на меня?"
+            jump chapter2_3q4
+            
+
+label chapter2_3q2:
+    m "{i}Она права, мы друзья. Но хочу ли я этого?{/i}"
+    menu:
+        "Да.":
+            "Д-да."
+            show l sad
+            l "Как-то не убедительно."
+            "Ну, я попрежнему думаю, что неплохо было бы завести побольше друзей."
+            "Тогда мне не придется полагаться на тебя во всём"
+            jump chapter2_3q5
+        "Нет.":
+            "Н-ну, наверно."
+            show l sad
+            l "..?"
+            "Я думаю, мне надо побыть одному."
+            show l annoyed
+            l "Что? Я пытаюсь тебя подбодрить, а ты говоришь, что я тебе не нужна?"
+            jump chapter2_3q6
+
+label chapter2_3q3:
+    m "{i}Я такой трус.{/i}"
+    m "{i}Если я не могу сказать ей, я должен...{/i}"
+    menu:
+        "Забыть об этом.":
+            m "{i}Я просто должен забыть это дурацкое чувство.{/i}"
+            m "{i}Полагаться на неё не так уж и плохо.{/i}"
+            m "{i}Может мне следует радоваться, что у меня есть кто-то вроде нее?{/i}"
+            scene bg black with pixellate
+            m "{i}Мы пошли домой.{/i}"
+            m "{i}Не может же быть всё хорошо?{/i}"
+            m "{i}Наверно неё поддержка это лучшее, на что я могу надеяться.{/i}"
+            m "{i}Я должен быть счаслив тому, что у меня есть.{/i}"
+            jump chapter3_1
+            
+        "Научиться жить с этим.":
+            m "{i}Я просто долежен смириться с этим.{/i}"
+            m "{i}Уверен, у меня найдутся силы.{/i}"
+            m "{i}До этого ведь было всё нормально.{/i}"
+            show l playful
+            l "Пойдем домой."
+            scene bg black with pixellate
+            m "{i}Я сказал себе, что не должен ничего менять.{/i}"
+            m "{i}Мы пошли домой.{/i}"                 
+            m "{i}Всё как обычно.{/i}"
+            jump chapter3_2
+
+label chapter2_3q4:
+    m "{i}Не знаю. Я должен сказать…{/i}"
+    menu:
+        "Нет.":
+            "Нет, я думаю это хорошо."
+            show l playful
+            l "Хаха, уже уверенней."
+            "Ну, я просто не хочу быть обузой."
+            show l happy
+            l "Ничего страшного."
+            "Надеюсь."
+            scene bg black with pixellate
+            m "{i}Она убедила меня в том, что все нормально.{/i}"
+            m "{i}Может мне не стоит меняться? Я должен быть доволен, что ничего не меняется.{/i}"
+            m "{i}Будет ли так вечно? Возможно она передумает.{/i}"
+            jump chapter3_1
+        "Да.":
+            "Мне просто следует быть более самостоятельным."
+            show l surprised
+            l "Правда?"
+            "Да."
+            show l upset
+            l "Хех, иногда мне кажется, что ты пытаешься избавиться от меня."
+            "…"
+            "Не совсем так."
+            "I just think we could tone it down a little." #TODO
+            show l sad
+            l "…"
+            scene bg black with pixellate
+            m "{i}Она пошла домой без меня.{/i}"
+            m "{i}Я почуствовал себя ужасно.{/i}"
+            m "{i}И почуствовал себя ещё хуже когда понял, насколько к ней привязан.{/i}"
+            m "{i}Мне пора разобраться с моими чувствами.{/i}"
+            jump chapter3_3
+
+label chapter2_3q5:
+    l "Хмм."
+    "Что?"
+    show l upset
+    l "Ты имеешь в виду больше друзей или друзей вместо меня?"
+    m "{i}Ну я имел в виду…{/i}"
+    menu:
+        "Больше друзей.":
+            "Просто больше друзей, конечно же!"
+            "Я ведь не могу тебя бросить."
+            show l happy
+            l "Правда?"
+            "Правда."
+            m "{i}Но я не знаю, смогут ли люди, с которыми я встречусь, поладить с ней как я.{/i}"
+            scene bg black with pixellate
+            m "{i}Мы некоторое время сидели в парке и потом отправились домой.{/i}"
+            m "{i}Она была счаслива, что я её не брошу.{/i}"
+            m "{i}Пожалуй, я нуждаюсь в ней больше чем в ком либо другом.{/i}"
+            jump chapter3_2
+        "Вместо тебя.":
+            "Не знаю. Для нас будет лучше иметь разных друзей."
+            show l annoyed
+            l "Мне не нужны другие друзья."
+            "Мне нужны!"
+            "Прости, мне нужно побыть одному. Я не могу проводить всё своё время с тобой!"
+            show l upset
+            l "Понятно."
+            hide l
+            m "{i}Она ушла.{/i}"
+            scene bg black with pixellate
+            m "{i}Знаю, я был жесток.{/i}"
+            m "{i}Но иначе она бы оставалась со мной все время...{/i}"
+            m "{i}...И я бы не смог двигаться дальше.{/i}"
+            m "{i}А мне кажется я должен попробовать.{/i}"
+            jump chapter3_3
+
+label chapter2_3q6:
+    m "{i}Ох, я разозлил её...{/i}"
+    menu:
+        "Извиниться.":
+            "Прости. Это не так."
+            show l upset
+            l "…"
+            "Я запутлася. Кончено, ты мне нужна."
+            show l sad
+            l "…"
+            l "Пошли домой?"
+            scene bg black with pixellate
+            m "{i}Я не хочу зависеть от неё, но ведь так проще!{/i}"
+            m "{i}Я не уверен, хорошо мне с ней или плохо.{/i}"
+            m "{i}Мы пошли домой и я больше не поднимал эту тему.{/i}"
+            jump chapter3_2
+        "Позволить ей уйти.":
+            "Прости, но не сейчас."
+            l "…"
+            "Не надо меня так подбадривать. Мне нужно время подумать."
+            show l cynical
+            l "Ладно. Тогда до встречи."
+            scene bg black with pixellate
+            m "{i}Она пошла домой без меня.{/i}"
+            m "{i}Я думал о наших отношениях.{/i}"
+            m "{i}Могу ли я вообще познакомиться с кем-то ещё?.{/i}"
+            jump chapter3_3
+            
+
+
+label chapter2_4:
+#This is the continuation of the lose the girl route.
+    scene bg park with pixellate
+    m "{i}Я несколько минут бродил по парку.{/i}"
+    m "{i}…Starting to feel a little aimless.{/i}" #TODO
+    m "{i}Может мне...{/i}"
+    menu:
+        "Присесть.":
+            m "{i}Я сел на землю и начал смотреть на проходящих людей.{/i}"
+            m "{i}Watching everyone milling around in pairs and groups, I start to feel really disconnected from it all.{/i}" #TODO
+            jump chapter2_4q1
+        "Продолжить ходить.":
+            m "{i}Буду ходить.{/i}"
+            m "{i}Это помогает не замечать других людей.{/i}"
+            m "{i}И так проще думать.{/i}"
+            jump chapter2_4q2
+        
+label chapter2_4q1:
+    m "{i}Попробую немного расслабиться.{/i}"
+    menu:
+        "Чувствую себя лучше.":
+            m "{i}Я начинаю чувствовать себя лучше.{/i}"
+            m "{i}Думаю, она мне больше не нужна.{/i}"
+            m "{i}Я могу жить сам по себе!{/i}"
+            jump chapter2_4q3
+        
+        "Чувствую себя хуже.":
+            m "{i}Хаха, я знал, что не стоило идти одному.{/i}"
+            m "{i}Сейчас я ничто сам по себе.{/i}"
+            jump chapter2_4q4
+            
+
+label chapter2_4q2:
+    m "{i}Я витал в облаках, бродя по парку.{/i}" #TODO
+    menu:
+        "Стало лучше.":
+            m "{i}Я придался своим мыслям на минутку.{/i}"
+            m "{i}Like some sort of dull mental humming.{/i}" #TODO
+            jump chapter2_4q5
+        
+        "Стало хуже.":
+            m "{i}О чем я думал, идя один?!{/i}"
+            m "{i}Хочу чтобы она была сейчас со мной.{/i}"
+            jump chapter2_4q6
+
+
+label chapter2_4q3:
+    m "{i}П-покрайней мере мне так кажется.{/i}"
+    menu:
+        "Пойти к ней.": #TODO
+            m "{i}Не попробуешь - не узнаешь.{/i}"
+            scene bg black with pixellate
+            m "{i}Я направился домой.{/i}"
+            m "{i}Я переживал и не знал, что ей сказать.{/i}"
+            m "{i}Это тяжело, но я должен это сделать.{/i}"
+            jump chapter3_3
+        
+        "Забыть об этом.":
+            m "{i}Я-я думаю, мне следует поразмыслить ещё немного.{/i}"
+            scene bg black with pixellate
+            m "{i}Я сидел и думал.{/i}"
+            m "{i}Жизнь так туманна.{/i}" #TODO
+            m "{i}Было бы глупо лишать себя единственной опоры.{/i}" #TODO
+            jump chapter3_2
+
+
+label chapter2_4q4:
+    m "{i}Теперь я понял, ...{/i}"
+    menu:
+        "…This is unhealthy.": #TODO
+            m "{i}This is not a healthy way to get by.{/i}" #TODO
+            m "{i}Нравится мне это или нет, с этим пора заканчивать.{/i}"
+            m "{i}Я не могу зацикливаться на этом вечно.{/i}"
+            scene bg black with pixellate
+            m "{i}Я направился домой.{/i}"
+            m "{i}Скажу ей, что нам нужно расстаться.{/i}"
+            m "{i}Положить конец этому самолюбию.{/i}" #TODO Он все понял?
+            jump chapter3_3
+        
+        "...Мне следует вернуться.":
+            m "{i}Я сам не свой без неё.{/i}"
+            m "{i}Я не чувствую связи с другими.{/i}"
+            scene bg black with pixellate
+            m "{i}Пора идти.{/i}"
+            m "{i}Я направился домой, чтобы извиниться.{/i}" #TODO
+            m "{i}Ненавижу быть таким слабаком.{/i}"
+            jump chapter3_2
+
+
+label chapter2_4q5:
+    m "{i}Могу думать только об одном...{/i}"
+    menu:
+        "Бросить её.":
+            m "{i}Я должен уйти от неё.{/i}"
+            m "{i}Хотя это меня пугает.{/i}"
+            scene bg black with pixellate
+            m "{i}Я пошел домой.{/i}"
+            m "{i}Не зная что сказать, я пытался вспомнить, о чем мы говорили.{/i}"
+            m "{i}Но у меня плохо получалось.{/i}"
+            jump chapter3_3
+        
+        "Остаться с ней.":
+            m "{i}Я думал о том, как много она для меня значит.{/i}" #TODO
+            m "{i}Я не могу это отрицать.{/i}"
+            scene bg black with pixellate
+            m "{i}Я пошел домой, собираясь извиниться.{/i}"
+            m "{i}Возможно, это не самое разумное решение...{/i}"
+            m "{i}...но это единственное к чему я всё время прихожу.{/i}" #TODO
+            jump chapter3_2
+    
+    
+label chapter2_4q6:
+    show l surprised
+    l "..!"
+    show l happy
+    l "Привет."
+    m "{i}Э, как долго она была здесь?{/i}"
+    "Привет."
+    show l playful
+    l "Мне показалось, что тебе что-то нужно."
+    "Хмм."
+    menu:
+        "Мне нужна она.":
+            "Да, ничего!"
+            show l happy
+            l "А."
+            "Я просто рад, что ты здесь."
+            scene bg black with pixellate
+            m "{i}Мы пошли домой вместе.{/i}"
+            m "{i}Немного стыдно, что я всё время отдаюсь ей.{/i}"
+            m "{i}Но в тоже время приятно, что она позволяет мне чувствовать себя лучше.{/i}"
+            jump chapter3_2
+        
+        "Нам нужно поговорить.":
+            "Нам нужно поговорить."
+            show l sad
+            l "…"
+            show l upset
+            l "That's never good." #TODO
+            scene bg black with pixellate
+            m "{i}Вместо того, чтобы ссориться на людях, мы пошли домой.{/i}"
+            m "{i}Мы шли в неуютном молчании.{/i}" #TODO
+            m "{i}Может она уже знает, что я собираюсь сказать?.{/i}"
+            jump chapter3_3
+    
+    
+
+label chapter3_1:
+#This is the final part of get the girl. The dilemma is crisis of personality.
+    scene bg house with pixellate
+    m "{i}Был днень послне годовщны нашей встречи.{/i}"
+    m "{i}I was feeling some sort of nervous excitement.{/i}" #TODO
+    m "{i}Мои руки дрожали.{/i}"
+    show l happy
+    l "..?"
+    l "О чем ты думаешь?"
+    "А..."
+    menu:
+        "Я думал о нас.":
+            "Просто думал о нас."
+            show l playful
+            l "Правда? Хаха."
+            jump chapter3_1q1
+        
+        "Просто думаю.":
+            "Просто... Да, ни о чём."
+            show l playful
+            l "Хмм... Мне так не кажется."
+            jump chapter3_1q2
+            
+
+label chapter3_1q1:
+    "Да."
+    show l happyanim
+    l "Классно."
+    m "{i}Что?{/i}"
+    m "{i}Мне это показалось?!{/i}"
+    show l happy
+    m "{i}На секунду... Это было как...{/i}"
+    menu:
+        "Подойти ближе.":
+            m "{i}Да, нет. Просто показалось.{/i}"
+            jump chapter3_1q3
+        
+        "Подожди.":
+            m "{i}…{/i}"
+            show l sad
+            l "Что-то не так?"
+            jump chapter3_1q4
+    
+label chapter3_1q2:
+    m "{i}…!{/i}"
+    show l happy
+    l "Да, ладно! Со мной-то ты можешь поделиться."
+    m "{i}Правда?{/i}"
+    "Ах, я просто волнуюсь."
+    show l sadanim
+    l "О чём?"
+    menu:
+        "Я застрял.":
+            "Иногда мне кажется, я застрял здесь."
+            show l upset
+            l "Мм."
+            jump chapter3_1q5
+        
+        "Подожди, что это было?":
+            "Ты это видела?"
+            show l surprised
+            l "Что?"
+            jump chapter3_1q6
+
+    
+    
+label chapter3_1q3:
+    show l happyanim
+    l "Ну..?"
+    "Я думал, что нам надо..."
+    m "{i}Вот опять.{/i}"
+    show l happy
+    "Я думаю, нам надо быть ближе."
+    "Я хочу знать о тебе гораздо больше."
+    show l playfulanim
+    l "Правда? Ты правда так думаешь?"
+    menu:
+        "Да.":
+            "Да, я уверен в этом."
+            m "{i}Я знал, что нем могу прожить без неё.{/i}"
+            m "{i}Без неё мне кажется, я упускаю что-то очень важное.{/i}"
+            scene bg black with pixellate
+            m "{i}Этой ночью мы были близки как никогда раньше.{/i}"
+            m "{i}I felt relief, now that I'd finally done it.{/i}" #TODO
+            jump finale1
+        
+        "Постой, что это было?":
+            "Подожди-ка"
+            show l surprised
+            l "Что?"
+            "Я-я не знаю. Это плохая идея."
+            show l sad
+            l "…"
+            show l upset
+            l "Ты передумал?"
+            "Нет... Я просто..."
+            scene bg black with pixellate
+            m "{i}Я не могу пройти через это.{/i}"
+            m "{i}Я просто слабак.{/i}"
+            m "{i}К тому же я знал, что это плохая идея сближаться с ней.{/i}"
+            m "{i}Потому что пути назад нет...{/i}"
+            jump finale2
+    
+    
+    
+    
+label chapter3_1q4:
+    "Н-нет."
+    show l happyanim
+    m "{i}Это уж слишком.{/i}"
+    m "{i}Есть только один способ покончить с этим.{/i}"
+    menu:
+        "Стать ближе.":
+            show l surprised
+            l "..!"
+            "Я должен знать..."
+            show l happy
+            l "Мм?"
+            "Ты ведь можешь мне помочь, правда?"
+            l "…"
+            show l playful
+            l "Да."
+            scene bg black with pixellate
+            m "{i}Я знал.{/i}"
+            m "{i}Я знал, что она может меня ободрить.{/i}" #TODO
+            m "{i}From the moment we met, this is what I'd been building up to.{/i}" #TODO          
+            jump finale1
+        
+        "Отступить.":
+            "Я не могу это сделать."
+            show l sad
+            l "Что?"
+            "Прости. Я попрежнему ни в чём не уверен."
+            show l upset
+            l "Хмм."
+            "Давай просто забудем об этом."
+            show l sad
+            l "…"
+            scene bg black with pixellate
+            m "{i}Мне даже не нужно спрашивать. Я знал, что она простит меня.{/i}"
+            m "{i}Как и раньше, она всегда со мной.{/i}"
+            m "{i}Всегда. Даже ни смотря на то, что я не могу принять хоть какого-то решения.{/i}"
+            jump finale2
+    
+    
+    
+label chapter3_1q5:
+    show l sad
+    l "Ладно, это ведь твой выбор. Я не заставляю тебя оставаться."
+    "Я знаю."
+    m "{i}Чем дольше я с ней нахожусь, тем больше мне кажется, что я застрял.{/i}"
+    m "{i}Как будто я больше не могу с собой совладать.{/i}"
+    menu:
+        "Да, это и не нужно":
+            show l sadanim
+            m "{i}Может мне и не следует всё контролировать.{/i}" #TODO
+            m "{i}Может лучше отдаться ей.{/i}"
+            m "{i}Наверно, я просто не хочу бороться.{/i}"
+            scene bg black with pixellate
+            m "{i}Я наконец...{/i}"
+            m "{i}...отдамся ей.{/i}"
+            m "{i}Но это было моим решением прекратить сопротивляться.{/i}"
+            jump finale1
+
+        "Мне нужно меняться.":
+            m "{i}Я не могу сдаваться.{/i}"
+            m "{i}I'll only end up resenting her.{/i}" #TODO
+            m "{i}Возможно, я изменюсь... Когда-нибудь.{/i}"
+            scene bg black with pixellate
+            m "{i}Я подумал, я могу её бросить.{/i}"
+            m "{i}Я сказал себе, что когда-нибудь... Когда у меня будут силы...{/i}"
+            m "{i}Но в конце концов...{/i}"
+            jump finale2
+        
+        
+label chapter3_1q6:
+    show l sad
+    l "Видела что?"
+    m "{i}Ох, оно пропало.{/i}"
+    "Но на мгновение там..."
+    menu:
+        "Там было что-то странное.":
+            "Я видел что-то странное."
+            show l happy
+            l "Хех, возможно, ты устал?"
+            "Нет, я не чувствую себя уствшим."
+            l "Всё равно, может стоит отдохнуть?"
+            "…"
+            "Хорошо, хорошо."
+            scene bg black with pixellate
+            m "{i}Остаток дня мы провели болтая ни о чём.{/i}"
+            m "{i}Я не могу говорить о чём-либо важном, особенно когда это косается её.{/i}"
+            m "{i}Наверно, я просто должен привыкнуть к этому.{/i}"
+            jump finale2
+        
+        "Не обращай внимания.":
+            "Не обращай внимания. Просто забудь."
+            show l happy
+            l "Хе, ты ведешь себя странно."
+            "Прости."
+            l "Да, ладно. Ты не должен извиняться."
+            "…"
+            l "Тебе не стоит держать всё в себе."
+            "Знаю, спасибо."
+            m "{i}Я не могу сказать её, как сильна она мне нужна.{/i}"
+            scene bg black with pixellate
+            m "{i}Does she just pity me?{/i}" #TODO
+            m "{i}Может по-этому я не могу сблизиться с ней.{/i}"
+            m "{i}Даже не знаю, каково это.{/i}"
+            jump finale2
+    
+    
+    
+
+label chapter3_2:
+#This is the final part of the average route. The dilemma is entropy.
+
+    scene bg house with pixellate
+    show l bored
+    m "{i}Был день послед годовщины нашей встречи.{/i}"
+    show l boredanim
+    m "{i}Я чувствовал тупую сдавливающую боль в голове.{/i}"
+    m "{i}It felt like I was surrounded.{/i}" #TODO
+    menu:
+        "Эй...":
+            "Эй."
+            show l happy
+            l "Мм?"
+            "Я тут подумал..."
+            jump chapter3_2q1
+        
+        "…":
+            "…"
+            m "{i}Что-то не так.{/i}"
+            jump chapter3_2q2
+            
+label chapter3_2q1:
+    show l playful
+    l "…For a change!" #TODO
+    "Ха-ха"
+    "Ты счаслива?"
+    show l happy
+    l "Да, я в порядке."
+    show l sadanim
+    l "А ты нет?"
+    "Нет, я просто..."
+    menu:
+        "Хочу чтобы мы были ближе.":
+            "Я думаю, мы можем быть ближе."
+            show l bored
+            l "Хмм, наверно."
+            show l happy
+            l "Это тебе решать."
+            l "Если ты так в этом уверен..."
+            jump chapter3_2q3
+        
+        
+        "Просто проверял.":
+            "Я просто хотел проверить."
+            show l happy
+            l "Хе-хе."
+            l "Знаю."
+            jump chapter3_2q4
+            
+    
+    
+label chapter3_2q2:
+    m "{i}I shouldn't feel this irritated.{/i}" #TODO
+    m "{i}Мне следует...{/i}"
+    menu:
+        "Прекратить об этом думать.":
+            m "{i}Хватит об этом думать.{/i}"
+            m "{i}Мне надо чем-то заняться.{/i}"
+            jump chapter3_2q5
+        
+        "Подумать получше.":
+            m "{i}Я должен собраться и сказать ей.{/i}"
+            "Слушай."
+            show l happy
+            l "Мм?"
+            jump chapter3_2q6
+
+
+
+label chapter3_2q3:
+    show l happyanim
+    "Я-я..."
+    menu:
+        "Я уверен.":
+            "Да, я в этом уверен."
+            show l playfulanim
+            l "…"
+            l "Hold still."
+            scene bg black with pixellate
+            m "{i}Я больше не мог так.{/i}"
+            m "{i}Я не хотел всё время оставаться прежним.{/i}"
+            m "{i}Я хотел принять решение. Хотя оно могло оказаться неверным.{/i}"
+            jump finale1
+        
+        "П-подожди.":
+            "…"
+            show l sadanim
+            l "..?"
+            show l upset
+            l "Я так и думала."
+            l "Ладно, не обращай внимания."
+            scene bg black with pixellate
+            m "{i}Что-то останавливает меня.{/i}"
+            m "{i}Мне попрежнему страшно.{/i}"
+            m "{i}Я не могу доверять ей.{/i}"
+            jump finale2
+
+
+label chapter3_2q4:
+    show l playfulanim
+    l "Я не могу помочь тебе с этим решением."
+    l "Ты должен принять его сам."
+    show l playful
+    "Эм..."
+    menu:
+        "Посмотрим, что будет.":
+            "Я просто посмотрю, что будет дальше."
+            show l sad
+            l "Правда?"
+            "Да, пожалуй."
+            scene bg black with pixellate
+            m "{i}Мне просто было страшно.{/i}"
+            m "{i}Я знал во что ввязываюсь.{/i}"
+            m "{i}Просто не хотел рисковать.{/i}"
+            jump finale2
+        
+        "Взять всё в свои руки.":
+            "Тогда..."
+            "Я хочу чтобы мы были ближе."
+            show l happyanim
+            l "…"
+            l "Ну…"
+            scene bg black with pixellate
+            m "{i}Я знал, что это глупое решение.{/i}"
+            m "{i}Она мне не подходит.{/i}"
+            m "{i}Я должен был знать, каково это.{/i}"
+            jump finale1
+
+
+label chapter3_2q5:
+    "Эй."
+    show l happy
+    l "А?"
+    "Я..."
+    menu:
+        "Я счаслив.":
+            "Хочу чтобы ты пообщяла мне."
+            l "Что?"
+            "Что всегда будешь со мной."
+            show l playful
+            l "Ты же знаешь, что я буду с тобой."
+            "…"
+            "Конечно."
+            scene bg black with pixellate
+            m "{i}Приятно осознавать, что ничего не поменяется.{/i}"
+            m "{i}Я справлюсь если ничег не будет меняться.{/i}"
+            m "{i}Теперь можно не бояться, что я потеряю её... Или себя.{/i}"
+            jump finale2
+        
+        "Need to be alone.":
+            "Я хочу чтобы ты ушла."
+            show l surprised
+            l "!!!"
+            show l sad
+            l "Это..."
+            show l upset
+            l "Это не удивительно."
+            "…"
+            l "Но, ладно."
+            show l sad
+            l "Возможно, когда-нибудь я снова буду тебе нужна."
+            scene bg black with pixellate
+            m "{i}Надеюсь это такого не случится.{/i}"
+            m "{i}Но я не могу перестать думать о ней.{/i}"
+            m "{i}I can't help but be reminded by the marks she left.{/i}" #TODO
+            jump finale3
+
+
+
+label chapter3_2q6:
+    "Меня это больше не устраивает."
+    show l sad
+    l "Мм."
+    show l annoyed
+    l "Чего ты хочешь чтобы я сделала?"
+    "Не знаю."
+    "…"
+    "Думаю, я предпочел бы быть один."
+    l "Хмм."
+    show l cynical
+    l "Ты правда думаешь, что справишься один?"
+    menu:
+        "Да.":
+            "Да."
+            "Я хочу попробовать."
+            show l sad
+            l "…"
+            l "Я могу вернуться в любое время."
+            "Да."
+            show l cynical
+            l "Не думаю, что ты справишься..."
+            "Я справлюсь."
+            show l sad
+            l "…"
+            scene bg black with pixellate
+            m "{i}Она много возмущалась.{/i}"
+            m "{i}Но я не сдавался.{/i}"
+            m "{i}Всё наконец-то начало проясняться.{/i}"
+            jump finale3
+        
+        "Нет.":
+            "Нет. Ты права."
+            show l happy
+            l "Хе."
+            show l playful
+            l "Прости."
+            "Нет, я знаю, что ты права."
+            "Прости, что не верил в тебя."
+            scene bg black with pixellate
+            m "{i}Она всегда присматривала за мной.{/i}"
+            m "{i}Она мне так близка. Но в тоже время это пугает.{/i}"
+            m "{i}Но не настолько, насколько меня пугает одиночество.{/i}"
+            jump finale2
+            
+
+label chapter3_3:
+#This is the final part of lose the girl. The dilemma is crisis of personality.
+
+    scene bg house with pixellate
+    show l sad
+    l "…"
+    "Нам надо поговорить."
+    show l upset
+    l "T-that's never good." #TODO
+    l "Не можем мы просто оставить всё как есть?"
+    show l sad
+    l "Всё ведь хорошо, не так ли?"
+    menu:
+        "Нет.":
+            "Нет."
+            "Прости, я больше так не могу."
+            show l cynical
+            l "Хмф."
+            jump chapter3_3q1
+        
+        "Может быть.":
+            "Может быть."
+            show l happy
+            l "Вот и хорошо."
+            show l sad
+            l "Почему ты вообще волнуешься?"
+            jump chapter3_3q2
+
+            
+label chapter3_3q1:
+    show l annoyedanim
+    l "Я не верю тебе."
+    "…"
+    l "Я ведь знаю теюя."
+    l "Ты ничто без меня."
+    show l angryanim
+    l "Такой же пустой и скучный как все."
+    "…"
+    menu:
+        "Я принял решение.":
+            "Я принял решение."
+            show l cynical
+            l "Хахаха!"
+            jump chapter3_3q3
+        
+        "Да, как она смеет!":
+            "Ч-что?!"
+            show l cynical
+            l "Хмф."
+            jump chapter3_3q4
+
+
+label chapter3_3q2:
+    m "{i}Ох, я должен ей сказать?{/i}"
+    "Ну..."
+    menu:
+        "Мне не нравится.": 
+            "Последнее время мне это совсем не нравится."
+            show l surprised
+            l "Это?"
+            "Я говорю о нас."
+            show l sad
+            l "…"
+            jump chapter3_3q5
+        
+        "Забудь.":
+            "Забудь."
+            show l sad
+            l "…"
+            show l annoyed
+            l "Нет."
+            jump chapter3_3q6
+
+
+label chapter3_3q3:
+    show l cynicalanim
+    l "Что-то не верится."
+    l "Ты слишком этого боишься."
+    l "Ты не можешь ничего без меня."
+    show l annoyed
+    l "Кто ещё будет тебе помогать? Никто."
+    menu:
+        "Заставить её уйти.":
+            "Плевать. Уходи."
+            show l angry
+            l "…"
+            show l upset
+            "…"
+            l "Никто не поможет тебе… Так как могла бы я."
+            "…"
+            "Тебе пора."
+            scene bg black with pixellate
+            m "{i}Какая-то часть меня с ней согласилась. Со всем, что она сказала.{/i}"
+            m "{i}Но, конечно...{/i}"
+            m "{i}Я больше не мог заставить себя ей верить.{/i}"
+            jump finale3
+        
+        "Подождать пока она успокоится.":
+            "…"
+            show l cynical
+            l "Никто не поможет. Потому что ты один."
+            show l annoyed
+            l "Никто больше не может понять тебя."
+            "... Из-за тебя."
+            l "Да."
+            show l cynical
+            l "Тебе со мной лучше чем с другими."
+            "Нет, это больше не так."
+            show l upset
+            l "…"
+            "Раньше я так думал… Но теперь я не уверен."
+            scene bg black with pixellate
+            m "{i}Её слова лишь придали мне решимости.{/i}"
+            m "{i}Я слышал это так много раз, что теперь они лишь пустой звук.{/i}"
+            m "{i}У меня наконец-то появились силы не согласиться с ней.{/i}"
+            jump finale3
+
+
+label chapter3_3q4:
+    show l cynicalanim
+    l "Ты же не хочешь быть как все, да?"
+    l "Они не способны тебя понять."
+    show l annoyed
+    l "А если они узнают про меня, они точно будут тебя ненавидеть." # Даже так?
+    "…"
+    show l cynicalanim
+    l "Ты ведь слышал, что они говорят?"
+    menu:
+        "Да…":
+            "Да и мне плевать."
+            "I'm more than that, and more than you." #TODO
+            show l annoyed
+            l "Думаешь?"
+            "Надеюсь."
+            show l cynical
+            l "Хе-хе."
+            l "Год или два, и ты поймешь, что не можешь без меня."
+            "…"
+            scene bg black with pixellate
+            m "{i}Надеюсь она неправа.{/i}"
+            m "{i}Где-то в глубине души я соглашался с ней. Поэтому надеялся и на обратное.{/i}"
+            m "{i}I decided to give life without her a try.{/i}" #TODO
+            jump finale3
+        
+        "Заткнись!":
+            "З-заткнись!"
+            show l angry
+            l "Не заткнусь!"
+            l "Что будешь делать, когда поймешь, что они тебя ненавидят?"
+            l "If I'm not around, who's going to make all that not matter." #TODO
+            show l annoyed
+            l "Это я делаю тебя собой."
+            "…"
+            "Знаю."
+            "И... Ненавижу это."
+            show l upset
+            l "Это же не так плохо."
+            show l sad
+            l "Разве нет?"
+            "…"
+            scene bg black with pixellate
+            m "{i}Я сдался.{/i}"
+            m "{i}She's right. My entire personality is built around her.{/i}" #TODO
+            m "{i}Если я потеряю её, от меня ничего наверняка не останется.{/i}"
+            jump finale2
+    
+
+
+label chapter3_3q5:
+    show l upset
+    l "Почему?"
+    "Мне... Мне просто не кажется это правильным больше."
+    show l sad
+    l "А..."
+    menu:
+        "Попросить её уйти.":
+            "Прости."
+            "I just need to see what it's like to be by myself." #TODO
+            l "Хмм."
+            "Но я рад, что встретил тебя."
+            show l upset
+            l "…"
+            scene bg black with pixellate
+            m "{i}В конце концов я ни о чём не жалел.{/i}"
+            m "{i}Мне казалось, что всё закончилось как и должно было.{/i}"
+            m "{i}Надеюсь она тоже это поняла.{/i}"
+            jump finale3
+            
+        
+        "Извиниться.":
+            "Прости."
+            l "…"
+            show l upset
+            l "Aren't things alright as they are?" #TODO
+            "Ну…"
+            show l sad
+            l "It's just a bad patch. You don't have to decide now." #TODO
+            show l happy
+            l "Подожди немного. Я уверена, всё станет лучше."
+            "…"
+            scene bg black with pixellate
+            m "{i}Я позволил убедить себя.{/i}"
+            m "{i}Да и она была права. Я передумал спустя некоторое время.{/i}"
+            m "{i}Она просто лишьком хорошо меня знает...{/i}"
+            jump finale2
+
+label chapter3_3q6:
+    show l sad
+    l "Я не могу просто не обращать на тебя внимания."
+    "…"
+    menu:
+        "Ладно.":
+            "Ладно. Мне просто это не нравится."
+            "Я хочу уйти."
+            show l upset
+            l "…"
+            show l annoyed
+            l "Никуда ты не пойдешь."
+            l "Ты попрежнему нуждаешься во мне."
+            "Что?"
+            l "Мне пришлось вытаскивать из тебя то, что тебе не нравится."
+            show l sad
+            l "Подумай ещё разок. Неужели ты хочешь быть одиноким и несчастным?"
+            "…"
+            show l happy
+            l "Со мной ты не будешь одинок."
+            show l playful
+            l "Если ты позволишь."
+            scene bg black with pixellate
+            m "{i}Конечно, я разрешил ей. Пусть делает, что хочет.{/i}"
+            m "{i}Я не в силах её остановить.{/i}"
+            m "{i}Я просто слишком жалок без неё.{/i}"
+            jump finale2
+        
+        "…":
+            "…Seriously, it's nothing." #TODO
+            show l sad
+            l "Хмм."
+            show l upset
+            l "Я знаю, что это важно, но если ты не хочешь говорить об этом..."
+            l "...Я ничего не могу с этим поделать."
+            "…"
+            show l sad
+            l "Надеюсь ты позволишь помочь тебе."
+            "…"
+            scene bg black with pixellate
+            m "{i}Хотел бы я ей позволить.{/i}"
+            m "{i}I wished I didn't want her help too.{/i}" #TODO
+            m "{i}Хотел бы чтобы мы вообще никогда не встречались. Потому что сейчас я застрял на ней.{/i}"
+            jump finale2
+
+label finale1:
+#This is the bad ending
+    m "{i}Я знаю, что принял правильное решение.{/i}"
+    scene bg hosp with pixellate
+    show nurse at right
+    nurse "В этот раз тебе повезло."
+    "…"
+    nurse "Ни нервы ни артерии не задеты."
+    m "{i}Ну я же не настолько глуп!{/i}"
+    "Мм, когда я могу пойти домой?"
+    nurse "Утром придет доктор. Тогда и посмотрим."
+    "Ладно…"
+    nurse "Ты чувствуешь себя лучше?"
+    "Да."
+    nurse "Но почему ты это делаешь?"
+    "…"
+    scene bg black with pixellate
+    m "{i}Конечно, выбраться из больницы не составляло труда.{/i}"
+    m "{i}Это было просто, так как я никогда себя не чувствовал так хорошо.{/i}"
+    m "{i}Я чувствовал завершенность. И почему я только сомневался в том, что она мне нужна?.{/i}"
+    m "{i}At the end of the day, my flaws are as defining as my good qualities.{/i}" #TODO
+    m "{i}I need her to carry on being myself. To sustain my personality.{/i}" #TODO
+    m "{i}Я хочу, чтобы она была счаслива.{/i}"
+    jump end
+
+label finale2:
+#This is the average ending
+    m "{i}Я думаю, я принял верное решение...{/i}"
+    scene bg house with pixellate
+    show l boredanim
+    m "{i}Надеюсь, всё останется так навечно.{/i}"
+    m "{i}Может мы и не будем счасливы, но нам точно не будет грусно.{/i}"
+    m "{i}Мне просто слишком страшно быть с ней или без неё.{/i}"
+    m "{i}Мне нужно довольствоваться тем что есть. Мне не нужны никакие ответы или решения.{/i}"
+    m "{i}Думаю, мы сможем оставаться вместе вечно...{/i}"
+    jump end
+    
+label finale3:
+#This is the good ending
+    m "{i}Надеюсь, я принял верное решение...{/i}"
+    scene bg house with pixellate
+    m "{i}Её нет уже месяц. Я больше не полагаюсь на неё.{/i}"
+    m "{i}Теперь я независим. Я счаслив!{/i}"
+    m "{i}Не знаю, что ждет меня в будущем, но это классно быть свободным.{/i}"
+    m "{i}Надеюсь я больше никогда не захочу её видеть снова.{/i}"
+    jump end
+
+
+label end:
+    stop music fadeout 3.0
+    $ renpy.pause(0)
+    scene black
+    with pixellate
+
+    show end
+    with pixellate
+    with Pause(2.0)
+
+    scene black
+    with pixellate
+    with Pause(1.0)
+
+    return
+
+
+</poem>
